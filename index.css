@@ -8,6 +8,7 @@ body {
     --main-color-red: #DA3456;
     --main-color-red2: #BC1F3F;
     --main-color-black: #1E1E1E;
+    --main-color-yellow: #EDC335;
 }
 
 .bg-turquoise {
@@ -22,6 +23,20 @@ body {
 .bg-main-black {
     background-color: var(--main-color-black);
 }
+.bg-main-yellow {
+    background-color: var(--main-color-yellow);
+}
 .text-black-1 {
     color: var(--main-color-black);
+}
+
+.bottom-20 {
+    bottom: -20px;
+}
+.rotate-25 {
+    --transform-rotate: 25deg;
+}
+
+.right-210 {
+    right: -210px;
 }
