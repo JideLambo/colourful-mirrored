@@ -9,10 +9,102 @@
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <h1 class="text-black black-text">
-      This is a static template, there is no bundler or bundling involved!
-    </h1>
+    <header class="bg-turquoise">
+      <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap py-4 border-b border-gray-900">
+          <div class="mr-6">
+            <a href="#">
+              <img src="assets/img/logoblack.png" alt="colorful logo" srcset="">
+            </a>
+          </div>
+
+          <div class="block lg:hidden">
+            <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+              <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+            </button>
+          </div>
+
+          <div class="w-full flex justify-between flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+              <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black text-base mr-4">
+                Shows
+              </a>
+              <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black text-base mr-4">
+                Podcasts
+              </a>
+              <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black text-base mr-4">
+                Win
+              </a>
+              <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black text-base mr-4">
+                News
+              </a>
+              <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black text-base mr-4">
+                Shop
+              </a>
+            </div>
+
+            <div>
+              <button class="inline-flex items-center text-black text-base mt-4 mr-8">
+                <span class="fill-current w-4 h-4 mr-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14.001" height="14">
+                    <path d="M7.001 8.001c-2.333 0-7 1.167-7 3.5v2.5h14v-2.5c0-2.333-4.666-3.5-7-3.5m0-8a3 3 0 102.991 3 3 3 0 00-2.991-3" fill-rule="evenodd"/>
+                  </svg>
+                </span>
+                Sign in
+              </button>
+
+              <button class="mt-4 mr-8">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18.049" height="18.049">
+                    <path d="M13.153 11.992l4.656 4.656a.82.82 0 01-1.16 1.16l-4.656-4.656a7.383 7.383 0 111.16-1.16zm-5.769 1.134a5.743 5.743 0 10-5.743-5.742 5.743 5.743 0 005.743 5.742z" fill="#14151a"/>
+                  </svg>
+                </span>
+              </button>
+
+              <button class="inline-flex items-center bg-red text-white text-lg font-semibold uppercase mt-4 py-2 px-4">
+                Live now
+                <span class="fill-current w-4 h-4 ml-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23.56">
+                    <path d="M10 0A10 10 0 110 10 10 10 0 0110 0z" fill="#fff"/>
+                    <path d="M9.51 6.416h5.979V23.56H9.51z" fill="none"/>
+                    <path d="M7.5 4.416v10.182l8-5.091z" fill="#bc1f3f"/>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <section class="container mx-auto">
+        <div class="flex justify-between py-10">
+          <div>
+            <span class="bg-red-deep p-1 uppercase font-semibold text-xs text-white">
+              on air
+            </span>
+            <p class="text-4xl font-bold text-black-1 mb-0 pb-0">
+              Richie vs. Legend!
+            </p>
+            <span class="underline text-gray-700">
+              The wind down
+            </span>
+            <div class="mt-4 mb-4 text-black-1 text-lg">
+              <p>Two soulful greats.</p>
+              <p>You decide who comes out on top.</p>
+              <p>Vote <a href="#" target="_blank">@colourful</a></p>
+            </div>
+            <button class="inline-flex items-center bg-main-black text-white text-lg font-semibold capitalize mt-4 py-2 px-4">
+              Listen Now
+            </button>
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </section>
+    </header>
   </body>
 </html>
