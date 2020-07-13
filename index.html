@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <header class="bg-turquoise">
+    <header class="bg-turquoise relative overflow-x-hidden">
       <div class="container mx-auto">
-        <nav class="flex items-center justify-between flex-wrap py-4 border-b border-gray-900">
+        <nav class="flex items-center justify-between flex-wrap py-4 border-b border-gray-900 z-10 relative">
           <div class="mr-6">
             <a href="#">
               <img src="assets/img/logoblack.png" alt="colorful logo" srcset="">
@@ -80,8 +80,8 @@
       </div>
 
       <section class="container mx-auto">
-        <div class="flex justify-between py-10">
-          <div>
+        <div class="flex flex-wrap justify-between py-10">
+          <div class="w-full md:w-2/4">
             <span class="bg-red-deep p-1 uppercase font-semibold text-xs text-white">
               on air
             </span>
@@ -124,11 +124,41 @@
               </a>
             </div>
           </div>
+          <div class="w-full md:w-2/4">
+            <div class="relative z-10">
+              <img
+                class="w-full object-cover" 
+                src="assets/img/richie-legend.png"
+                alt="richie-legend"
+              >
+
+              <div class="absolute right-0 bottom-20">
+                <button href="#">
+                  <span class="bg-main-black p-2 flex justify-evenly items-center h-12 w-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27.135" height="16.92">
+                      <path d="M0 9.87h21.708l-5.141 5.076 2 1.974 8.568-8.46L18.566 0l-2 1.974 5.142 5.076H0z" fill="#fff" fill-rule="evenodd"/>
+                    </svg>
+                  </span>
+                </button>
+                <div class="carousel">
+                  <ol class="carousel-indicators">
+                    <li class="active bg-black w-2 h-2 inline-block"></li>
+                    <li class="bg-black w-2 h-2 inline-block"></li>
+                    <li class="bg-black w-2 h-2 inline-block"></li>
+                    <li class="bg-black w-2 h-2 inline-block"></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
           <div>
 
           </div>
         </div>
       </section>
+
+      <div class="absolute w-2/5 h-full bg-main-yellow top-0 right-210 z-0 origin-center transform rotate-25">
+      </div>
     </header>
   </body>
 </html>
