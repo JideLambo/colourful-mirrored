@@ -1,1 +1,22 @@
+:root {
+    --main-color-turquoise : #27DCC4;
+    --main-color-red: #DA3456;
+    --main-color-red2: #BC1F3F;
+    --main-color-black: #1E1E1E;
+}
 
+.bg-turquoise {
+    background-color: var(--main-color-turquoise);
+}
+.bg-red {
+    background-color: var(--main-color-red);
+}
+.bg-red-deep {
+    background-color: var(--main-color-red2);
+}
+.bg-main-black {
+    background-color: var(--main-color-black);
+}
+.text-black-1 {
+    color: var(--main-color-black);
+}
