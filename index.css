@@ -36,7 +36,25 @@ body {
 .rotate-25 {
     --transform-rotate: 25deg;
 }
-
 .right-210 {
     right: -210px;
+}
+
+/* toggle mobile menu  */
+.toggle-menu {
+    height: 0;
+    overflow: hidden;
+    transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 414px){
+    .h-half {
+        height: 50%;
+    }
+    .rotate-20 {
+        --transform-rotate: 20deg;
+    }
+    .right-160 {
+        right: -160px;
+    }
 }
