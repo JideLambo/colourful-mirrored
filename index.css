@@ -40,6 +40,9 @@ body {
     right: -210px;
 }
 
+.pb-60 {
+    padding-bottom: 60%;
+}
 /* toggle mobile menu  */
 .toggle-menu {
     height: 0;
@@ -57,4 +60,34 @@ body {
     .right-160 {
         right: -160px;
     }
+    .menu-nav {
+        border-top: 1px solid #000000;
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+}
+
+/* hero carousel */
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+.carousel-control {
+    /* display: none; */
+    cursor: pointer;
+}
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2 {
+  display: block;
 }
