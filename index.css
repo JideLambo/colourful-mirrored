@@ -47,6 +47,9 @@ body {
 .pb-60 {
     padding-bottom: 60%;
 }
+.min-h-32 {
+    min-height: 8rem;
+}
 /* toggle mobile menu  */
 .toggle-menu {
     height: 0;
@@ -70,7 +73,20 @@ body {
         margin-bottom: 40px;
     }
     .carousel-control-group {
-        bottom: calc(100vh - 190px);
+        bottom: calc(100% - 260px);
+    }
+    .min-h-32 {
+        min-height: 6rem;
+        max-height: 6rem;
+    }
+}
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+    .carousel-control-group {
+        bottom: calc(100% - 280px);
+    }
+    .min-h-32 {
+        min-height: 8rem;
+        max-height: 8rem;
     }
 }
 
@@ -86,4 +102,16 @@ body {
 }
 .carousel-control {
     cursor: pointer;
+}
+.carousel-trigger {
+    opacity: 0.5;
+}
+.active.carousel-trigger {
+    opacity: 1;
+}
+
+.carousel-transition {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
 }
