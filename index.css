@@ -111,7 +111,7 @@ body {
 }
 
 .carousel-transition {
-    visibility: hidden;
+    display: none;
     opacity: 0;
-    transition: visibility 0s, opacity 0.3s linear;
+    transition: display 0s, opacity 0.3s ease-in;
 }
