@@ -37,7 +37,7 @@
 
           <button class="lg:hidden inline-flex items-baseline bg-red text-white text-base font-semibold uppercase py-2 px-2">
             Live
-            <span class="fill-current w-4 h-4 ml-2">
+            <span class="fill-current w-4 h-5 ml-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                 <path d="M10 0A10 10 0 110 10 10 10 0 0110 0z" fill="#fff"/>
                 <path d="M9.51 6.416h5.979V23.56H9.51z" fill="none"/>
@@ -80,13 +80,13 @@
   
               <div class="w-full lg:w-3/5">
                 <div class="w-full flex flex-wrap items-baseline justify-between">
-                  <div class="relative lg:mr-2 w-full lg:w-2/4">
+                  <div id="js-searchbar" class="relative lg:mr-2 w-full lg:w-2/4 invisible">
                     <span>
                       <input class="transition-colors duration-100 ease-in-out focus:outline-0 placeholder-gray-600 bg-white border border-black focus:bg-white focus:border-gray-300 py-2 pr-4 pl-4 block w-full appearance-none leading-normal" type="text" placeholder="Search here">
                     </span>
                   </div>
                 
-                  <button class="lg:inline-flex items-center text-black text-base xl:mr-4 hidden">
+                  <button id="js-toggle-searchbar" class="lg:inline-flex items-center text-black text-base xl:mr-4 hidden">
                     <span class="fill-current w-4 h-4">
                       <svg class="fill-current pointer-events-none text-black w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"></path></svg>
                     </span>
@@ -315,7 +315,7 @@
           </div>
 
           <div class="absolute right-0 bottom-20 z-10 carousel-control-group">
-            <button for="carousel-1" class="carousel-control next control-1" id="js-next-carousel">
+            <button for="carousel-4" class="carousel-control next control-1" id="js-prev-carousel">
               <span class="bg-main-black p-2 flex justify-evenly items-center h-12 w-12">
                 <svg xmlns="http://www.w3.org/2000/svg" width="27.135" height="16.92">
                   <path d="M27.135 9.87H5.427l5.141 5.076-2 1.974L0 8.46 8.569 0l2 1.974L5.427 7.05h21.708z" fill="#fff" fill-rule="evenodd"/>
@@ -340,7 +340,7 @@
                 <li id="trigger-carousel-3" class="carousel-trigger bg-black w-2 h-2 inline-block cursor-pointer">
                   <label class="carousel-bullet"></label>
                 </li>
-                <li id="trigger-carousel-1" class="carousel-trigger bg-black w-2 h-2 inline-block cursor-pointer">
+                <li id="trigger-carousel-4" class="carousel-trigger bg-black w-2 h-2 inline-block cursor-pointer">
                   <label class="carousel-bullet"></label>
                 </li>
               </ol>

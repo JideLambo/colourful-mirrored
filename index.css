@@ -113,6 +113,9 @@ body {
     transition: all 0.3s ease-in;
     display: flex;
 }
+.invisible {
+    visibility: hidden;
+}
 .carousel-transition {
     display: none;
     opacity: 0;
