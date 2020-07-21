@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   }
 
   const setAllCarouselItemsToHidden = () => {
-    carouselItems.forEach((item) => item.classList.add('hidden'));
+    carouselItems.forEach((item) => item.classList.add('carousel-transition'));
   }
 
   carouselTriggers.forEach((carouselElement) => {
@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       target.classList.add('active');
       const carouselId = target.id.substring(8);
       setAllCarouselItemsToHidden()
-      document.getElementById(carouselId).classList.remove('hidden');
+      document.getElementById(carouselId).classList.remove('carousel-transition');
       document.getElementById(carouselId).classList.add('active');
     });
   });
