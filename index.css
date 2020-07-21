@@ -57,6 +57,9 @@ body {
     transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
+.invisible {
+    visibility: hidden;
+}
 @media only screen and (min-width: 320px) and (max-width: 414px){
     .h-half {
         height: 50%;
@@ -78,6 +81,9 @@ body {
     .min-h-32 {
         min-height: 6rem;
         max-height: 6rem;
+    }
+    .invisible {
+        visibility: visible;
     }
 }
 @media only screen and (min-width: 415px) and (max-width: 768px) {
@@ -112,9 +118,6 @@ body {
 .active-carousel {
     transition: all 0.3s ease-in;
     display: flex;
-}
-.invisible {
-    visibility: hidden;
 }
 .carousel-transition {
     display: none;
