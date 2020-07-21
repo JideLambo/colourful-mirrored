@@ -27,7 +27,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     carouselId = arrowToggle ? target.id : target.id.substring(8);
     setAllCarouselItemsToHidden();
     document.getElementById(carouselId).classList.remove('carousel-transition');
-    document.getElementById(carouselId).classList.add('active');
+    arrowToggle
+      ? document.getElementById(carouselId).classList.add('active-carousel')
+      : document.getElementById(carouselId).classList.add('active');
   }
 
   carouselTriggers.forEach((carouselElement) => {
