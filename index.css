@@ -9,6 +9,7 @@ body {
     --main-color-red2: #BC1F3F;
     --main-color-black: #1E1E1E;
     --main-color-yellow: #EDC335;
+    --main-color-gray-1: #BFBFBF;
 }
 
 .bg-turquoise {
@@ -32,6 +33,9 @@ body {
 }
 .text-black-1 {
     color: var(--main-color-black);
+}
+.text-gray-1 {
+    color: var(--main-color-gray-1);
 }
 
 .bottom-20 {
@@ -97,11 +101,6 @@ body {
 }
 
 /* hero carousel */
-.carousel-inner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
 .carousel-item {
     -webkit-transition: opacity 0.3s ease-out;
     transition: opacity 0.3s ease-out;
@@ -123,4 +122,25 @@ body {
     display: none;
     opacity: 0;
     transition: display 0s, opacity 0.3s ease-in;
+}
+
+.hero-bg-transform::after {
+    content: "";
+    position: absolute;
+    top: -90px;
+    right: 0;
+    display: block;
+    /* background-color: red; */
+    background-image: url(assets/img/clipShape.svg);
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 650px;
+    /* transform: rotate(40deg); */
+    z-index: 0;
+}
+
+/*  Podcast tabs */
+.tab-group .active {
+    color: var(--main-color-black);
+    border-bottom: 2px solid var(--main-color-black);
 }
