@@ -89,6 +89,14 @@ body {
     .invisible {
         visibility: visible;
     }
+    .width-150 {
+        width: 160%;
+    }
+    .fixed-mobile-menu {
+        height: 100vh;
+        position: fixed;
+        z-index: 20;
+    }
 }
 @media only screen and (min-width: 415px) and (max-width: 768px) {
     .carousel-control-group {
@@ -97,6 +105,9 @@ body {
     .min-h-32 {
         min-height: 8rem;
         max-height: 8rem;
+    }
+    .width-150 {
+        width: 160%;
     }
 }
 
