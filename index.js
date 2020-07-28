@@ -2,6 +2,7 @@
 window.addEventListener('DOMContentLoaded', (event) => {
   const switchmenu = document.querySelector('.switch-menu');
   const mobileMenu = document.querySelector('.mobile-menu');
+  const header = document.querySelector("header");
   const searchBar = document.getElementById('js-searchbar');
   const carouselItems = document.querySelectorAll('.carousel-item');
   const carouselNextButton = document.getElementById('js-next-carousel');
@@ -14,6 +15,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   switchmenu.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
+    header.classList.toggle('fixed-mobile-menu');
   });
 
   /**
