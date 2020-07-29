@@ -10,6 +10,7 @@ body {
     --main-color-black: #1E1E1E;
     --main-color-yellow: #EDC335;
     --main-color-gray-1: #BFBFBF;
+    --main-color-gray-2: #F5F6FA;
 }
 
 .bg-turquoise {
@@ -26,6 +27,9 @@ body {
 }
 .bg-main-yellow {
     background-color: var(--main-color-yellow);
+}
+.bg-main-gray {
+    background-color: var(--main-color-gray-2);
 }
 .bg-clip-yellow {
     background-image: url(assets/img/clipShape.png);
@@ -97,6 +101,12 @@ body {
         position: fixed;
         z-index: 20;
     }
+    .categorySmPhoto {
+        width: 45%;
+    }
+    .categorySmOption {
+        width: 85%;
+    }
 }
 @media only screen and (min-width: 415px) and (max-width: 768px) {
     .carousel-control-group {
@@ -154,4 +164,19 @@ body {
 .tab-group .active {
     color: var(--main-color-black);
     border-bottom: 2px solid var(--main-color-black);
+}
+
+.h-60 {
+    height: 40%;
+}
+
+.categoryPhoto {
+    max-height: 400px;
+    overflow: hidden;
+}
+.categoryCaption {
+    height: calc(630px - 400px);
+}
+.categorySmOption {
+    width: 80%;
 }
