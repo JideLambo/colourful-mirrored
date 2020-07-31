@@ -11,6 +11,7 @@ body {
     --main-color-yellow: #EDC335;
     --main-color-gray-1: #BFBFBF;
     --main-color-gray-2: #F5F6FA;
+    --main-color-blue: #06A7E2;
 }
 
 .bg-turquoise {
@@ -40,6 +41,9 @@ body {
 }
 .text-gray-1 {
     color: var(--main-color-gray-1);
+}
+.text-blue-1 {
+    color: var(--main-color-blue);
 }
 
 .bottom-20 {
