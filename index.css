@@ -12,6 +12,7 @@ body {
     --main-color-gray-1: #BFBFBF;
     --main-color-gray-2: #F5F6FA;
     --main-color-blue: #06A7E2;
+    --main-color-white2: #FEFEFE;
 }
 
 .bg-turquoise {
@@ -31,6 +32,9 @@ body {
 }
 .bg-main-gray {
     background-color: var(--main-color-gray-2);
+}
+.bg-color-white2 {
+    background-color: var(--main-color-white2);
 }
 .bg-clip-yellow {
     background-image: url(assets/img/clipShape.png);
