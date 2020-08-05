@@ -76,58 +76,6 @@ body {
 .invisible {
     visibility: hidden;
 }
-@media only screen and (min-width: 320px) and (max-width: 414px){
-    .h-half {
-        height: 50%;
-    }
-    .rotate-20 {
-        --transform-rotate: 20deg;
-    }
-    .right-160 {
-        right: -160px;
-    }
-    .menu-nav {
-        border-top: 1px solid #000000;
-        margin-top: 15px;
-        margin-bottom: 20px;
-    }
-    .carousel-control-group {
-        bottom: calc(100% - 260px);
-    }
-    .min-h-32 {
-        min-height: 6rem;
-        max-height: 6rem;
-    }
-    .invisible {
-        visibility: visible;
-    }
-    .width-150 {
-        width: 160%;
-    }
-    .fixed-mobile-menu {
-        height: 100vh;
-        position: fixed;
-        z-index: 20;
-    }
-    .categorySmPhoto {
-        width: 45%;
-    }
-    .categorySmOption {
-        width: 85%;
-    }
-}
-@media only screen and (min-width: 415px) and (max-width: 768px) {
-    .carousel-control-group {
-        bottom: calc(100% - 280px);
-    }
-    .min-h-32 {
-        min-height: 8rem;
-        max-height: 8rem;
-    }
-    .width-150 {
-        width: 160%;
-    }
-}
 
 /* hero carousel */
 .carousel-item {
@@ -182,9 +130,68 @@ body {
     max-height: 400px;
     overflow: hidden;
 }
-.categoryCaption {
+/* .categoryCaption {
     height: calc(630px - 400px);
-}
+} */
 .categorySmOption {
     width: 80%;
+}
+.contents {
+    display: contents;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 414px){
+    .h-half {
+        height: 50%;
+    }
+    .rotate-20 {
+        --transform-rotate: 20deg;
+    }
+    .right-160 {
+        right: -160px;
+    }
+    .menu-nav {
+        border-top: 1px solid #000000;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .carousel-control-group {
+        bottom: calc(100% - 260px);
+    }
+    .min-h-32 {
+        min-height: 6rem;
+        max-height: 6rem;
+    }
+    .invisible {
+        visibility: visible;
+    }
+    .width-150 {
+        width: 160%;
+    }
+    .fixed-mobile-menu {
+        height: 100vh;
+        position: fixed;
+        z-index: 20;
+    }
+    .categorySmPhoto {
+        width: 45%;
+    }
+    .categorySmOption {
+        width: 85%;
+    }
+    .contents {
+        display: block;
+    }
+}
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+    .carousel-control-group {
+        bottom: calc(100% - 280px);
+    }
+    .min-h-32 {
+        min-height: 8rem;
+        max-height: 8rem;
+    }
+    .width-150 {
+        width: 160%;
+    }
 }
