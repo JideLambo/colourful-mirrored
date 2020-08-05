@@ -364,7 +364,7 @@
           </div>
           <div class="mt-4">
             <div class="grid grid-cols-6 grid-rows-1 md:grid-rows-2 grid-flow-row md:grid-flow-col gap-4">
-              <div class="md:row-start-1 md:row-end-3 col-span-6 md:col-span-3 border relative bg-white hover:shadow-lg cursor-pointer">
+              <div class="md:row-start-1 md:row-end-3 col-span-6 md:col-span-3 relative bg-white hover:shadow-lg cursor-pointer">
                 <div class="w-full">
                   <div class="categoryPhoto">
                       <img
@@ -381,10 +381,10 @@
                 </div>
               </div>
 
-              <div class="row-span-1 col-span-6 md:col-span-3 flex bg-white border hover:shadow-lg cursor-pointer">
+              <div class="row-span-1 col-span-6 md:col-span-3 flex bg-white hover:shadow-lg cursor-pointer">
                 <div class="categorySmPhoto w-2/4">
                   <a href="#">
-                    <img src="assets/img/img1/smImg.png" alt="win tickets to Lionel Live" class="md:h-full">
+                    <img src="assets/img/img1/smImg.png" alt="win tickets to Lionel Live" class="md:h-full md:w-full">
                   </a>
                 </div>
                 <div class="categorySmOption flex justify-between flex-col p-2 md:p-4">
@@ -394,10 +394,10 @@
                 </div>
               </div>
 
-              <div class="row-span-1 col-span-6 md:col-span-3 flex bg-white border hover:shadow-lg cursor-pointer">
+              <div class="row-span-1 col-span-6 md:col-span-3 flex bg-white hover:shadow-lg cursor-pointer">
                 <div class="categorySmPhoto w-2/4">
                   <a href="#">
-                    <img src="assets/img/img1/smImg1.png" alt="win tickets to Lionel Live" class="md:h-full">
+                    <img src="assets/img/img1/smImg1.png" alt="win tickets to Lionel Live" class="md:h-full md:w-full">
                   </a>
                 </div>
                 <div class="categorySmOption flex justify-between flex-col p-2 md:p-4">
@@ -467,7 +467,7 @@
               <li class="px-2 py-4 md:px-6 md:py-3 bg-color-white2 text-black text-xs md:text-sm font-semibold uppercase cursor-pointer border-gray-100 border-l-2 border-r-2">Sun</li>
             </ul>
           </div>
-          <div class="mt-6 w-full md:w-2/4">
+          <div class="mt-6 w-full md:w-3/5">
             <div class="border-green-600 border-l-4 mb-4 cursor-pointer">
               <div class="bg-white flex ml-1 hover:shadow">
                 <div class="flex justify-between items-center p-3 md:p-6">
@@ -493,7 +493,7 @@
                 </div>
                 <div class="p-4">
                   <h4 class="text-sm md:text-lg capitalize font-medium md:font-semibold text-black">All night long</h4>
-                  <p class="hidden md:block text-sm text-black-1">Get the latest news, reviews, gossip and commentary from across the Continent.</p>
+                  <p class="hidden md:block text-sm text-black-1">Get the latest news, </p>
                 </div>
               </div>
             </div>
@@ -502,22 +502,26 @@
       </section>
 
       <section class="bg-main-gray">
-        <div class="container mx-auto bg-white">
-          <div class="flex justify-between">
-            <div class="py-10 px-6 md:px-6 w-full md:w-2/5">
+        <div class="container mx-auto py-10 px-6 md:px-6">
+          <div class="bg-white flex justify-between flex-wrap flex-col-reverse md:flex-row">
+            <div class="pt-6 md:pt-10 px-6 md:px-10 w-full md:w-1/2">
               <h2 class="text-3xl font-bold text-black-1 leading-normal mb-3">Get the latest updates</h2>
               <p class="text-base text-black-1 leading-normal">Get discounts, priority tickets and enter the latest competitions.</p>
               
-              <form class="w-full max-w-sm mt-6">
+              <form class="w-full md:max-w-lg mt-6">
                 <div class="border-b border-gray-900 py-2 mb-4">
-                  <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="First name">
+                  <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 pr-2 leading-tight focus:outline-none" type="text" placeholder="First name">
                 </div>
                 <div class="border-b border-gray-900 py-2 mb-4">
-                  <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Second name">
+                  <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 pr-2 leading-tight focus:outline-none" type="text" placeholder="Second name">
                 </div>
                 <div class="border-b border-gray-900 py-2 mb-4">
-                  <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="email" placeholder="Email">
+                  <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 pr-2 leading-tight focus:outline-none" type="email" placeholder="Email">
                 </div>
+                <button class="inline-flex items-center bg-main-black text-white text-lg font-semibold capitalize lg:mt-8 py-2 px-6 hover:bg-gray-900 hover:shadow-xl transition ease-in duration-150">
+                  Get some
+                </button>
+                <p class="text-sm text-black-1 mt-3">We won't spam you. It'll be one message a month. Promise.</p>
               </form>
             </div>
 
