@@ -5,6 +5,8 @@ window.addEventListener('DOMContentLoaded', () => {
   const hamburgerMenu = document.querySelectorAll('.hamburger-menu');
   const searchBar = document.getElementById('js-searchbar');
   const carouselItems = document.querySelectorAll('.carousel-item');
+  const tabPillsOneItems = document.querySelectorAll('.tab-pills-1');
+  const tabPillsTwoItems = document.querySelectorAll('.tab-pills-2');
   const carouselNextButton = document.getElementById('js-next-carousel');
   const carouselPrevButton = document.getElementById('js-prev-carousel');
   const carouselTriggers = document.querySelectorAll('.carousel-trigger');
@@ -86,5 +88,27 @@ window.addEventListener('DOMContentLoaded', () => {
     Array.from(searchBar.classList).includes('invisible')
       ? searchBar.classList.remove('invisible')
       : searchBar.classList.add('invisible');
+  });
+
+  // Event listener for tab-pills-1 active state toggling
+  tabPillsOneItems.forEach((tabPill) => {
+    tabPill.addEventListener('click', () => {
+      removeAllActiveStates(tabPillsOneItems);
+      tabPill.classList.add('active');
+      // Switch the content on display
+    });
+  });
+
+  // Event listener for tab-pills-1 active state toggling
+  tabPillsTwoItems.forEach((tabPill) => {
+    tabPill.addEventListener('click', () => {
+      tabPillsTwoItems.forEach((element) => {
+        element.classList.add('bg-color-white2', 'text-black')
+        element.classList.remove('bg-black', 'text-white')
+      });
+      tabPill.classList.remove('bg-color-white2', 'text-black')
+      tabPill.classList.add('bg-black', 'text-white');
+      // Switch the content on display
+    });
   });
 });
