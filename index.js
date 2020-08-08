@@ -1,8 +1,8 @@
 
-window.addEventListener('DOMContentLoaded', (event) => {
-  const switchmenu = document.querySelector('.switch-menu');
+window.addEventListener('DOMContentLoaded', () => {
   const mobileMenu = document.querySelector('.mobile-menu');
   const header = document.querySelector("header");
+  const hamburgerMenu = document.querySelectorAll('.hamburger-menu');
   const searchBar = document.getElementById('js-searchbar');
   const carouselItems = document.querySelectorAll('.carousel-item');
   const carouselNextButton = document.getElementById('js-next-carousel');
@@ -13,10 +13,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
   const carouselIdList = ['carousel-1', 'carousel-2', 'carousel-3', 'carousel-4'];
   const lastIndex = 3; // The JavaScript biggest index of the carouselIdList
 
-  switchmenu.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-    header.classList.toggle('fixed-mobile-menu');
-  });
+  // Event listener to toggle the menu on mobile devices
+  hamburgerMenu.forEach((menuIcon) => {
+    menuIcon.addEventListener('click', () => {
+      menuIcon.classList.add('hidden');
+      Array.from(menuIcon.classList).includes('switch-menu')
+        ? document.querySelector('.close-menu').classList.remove('hidden')
+        : document.querySelector('.switch-menu').classList.remove('hidden');
+      mobileMenu.classList.toggle('hidden');
+      header.classList.toggle('fixed-mobile-menu');
+    })
+  })
 
   /**
    * Function to remove all active classes from html elements NodeList
@@ -51,12 +58,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
       : document.getElementById(carouselId).classList.add('active');
   }
 
-  // Event listner for carousel triggers
+  // Event listener for carousel triggers
   carouselTriggers.forEach((carouselElement) => {
     carouselElement.addEventListener('click', ({ target }) => toggleTrigger(target));
   });
 
-  // Event Listner for carousel next (arrow) button
+  // Event Listener for carousel next (arrow) button
   carouselNextButton.addEventListener('click', () => {
     const currentIndex = carouselIdList.findIndex(id => id === carouselId);
     const target = currentIndex === lastIndex
@@ -65,7 +72,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     toggleTrigger(target, true);
   });
 
-  // Event Listner for carousel prev (arrow) button
+  // Event Listener for carousel prev (arrow) button
   carouselPrevButton.addEventListener('click', () => {
     const currentIndex = carouselIdList.findIndex(id => id === carouselId);
     const target = currentIndex === 0
@@ -74,7 +81,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     toggleTrigger(target, true);
   });
 
-  // Event Listner for toggling search bar open and close
+  // Event Listener for toggling search bar open and close
   searchBarToggleButton.addEventListener('click', () => {
     Array.from(searchBar.classList).includes('invisible')
       ? searchBar.classList.remove('invisible')
