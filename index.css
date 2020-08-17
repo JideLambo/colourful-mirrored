@@ -80,6 +80,9 @@ body {
 .min-h-32 {
   min-height: 8rem;
 }
+.z-2 {
+  z-index: 2;
+}
 /* toggle mobile menu  */
 .toggle-menu {
   height: 0;
