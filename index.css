@@ -8,6 +8,7 @@ body {
   --main-color-red: #da3456;
   --main-color-red2: #bc1f3f;
   --main-color-black: #1e1e1e;
+  --main-color-black-2: #3d3d3d;
   --main-color-yellow: #edc335;
   --main-color-gray-1: #bfbfbf;
   --main-color-gray-2: #f5f6fa;
@@ -29,6 +30,9 @@ body {
 }
 .bg-main-black {
   background-color: var(--main-color-black);
+}
+.bg-main-black-2 {
+  background-color: var(--main-color-black-2);
 }
 .bg-main-yellow {
   background-color: var(--main-color-yellow);
@@ -148,12 +152,12 @@ body {
   right: 50px;
 }
 .categoryPhoto {
-  max-height: 320px;
+  max-height: 70%;
   overflow: hidden;
 }
-/* .categoryCaption {
-    height: calc(630px - 400px);
-} */
+.categoryCaption {
+  height: 30%;
+}
 .categorySmOption {
   width: 60%;
 }
@@ -195,6 +199,7 @@ body {
   height: 338px;
   z-index: 0;
 }
+
 @media only screen and (min-width: 320px) and (max-width: 414px) {
   .h-half {
     height: 50%;
@@ -250,6 +255,9 @@ body {
   .background-landing-clip::before {
     width: 150px;
     height: 90px;
+  }
+  .bg-sm-dark-gray {
+    background-color: #3d3d3d;
   }
 }
 @media only screen and (min-width: 415px) and (max-width: 768px) {
