@@ -259,6 +259,9 @@ body {
   .bg-sm-dark-gray {
     background-color: #3d3d3d;
   }
+  .carousel-control-group {
+    z-index: 10;
+  }
 }
 @media only screen and (min-width: 415px) and (max-width: 768px) {
   .carousel-control-group {
