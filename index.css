@@ -25,6 +25,9 @@ body {
 .bg-red {
   background-color: var(--main-color-red);
 }
+.bg-red:hover {
+  background-color: var(--main-color-red2);
+}
 .bg-red-deep {
   background-color: var(--main-color-red2);
 }
