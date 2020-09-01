@@ -112,13 +112,13 @@
               </div>
 
               <div class="lg:hidden w-full mb-12">
-                <a href="#" class="block mt-4 text-black text-xl font-semibold">
+                <a href="#" class="block text-black text-xl font-semibold">
                   Log in
                 </a>
-                <a href="#" class="block mt-4 text-black text-xl font-semibold">
+                <a href="#" class="block text-black text-xl font-semibold">
                   Media
                 </a>
-                <a href="#" class="block mt-4 text-black text-xl font-semibold">
+                <a href="#" class="block text-black text-xl font-semibold">
                   About
                 </a>
               </div>
@@ -133,7 +133,7 @@
                   >
                     <span>
                       <input
-                        class="appearance-none block w-full bg-gray-200 text-2xl lg:text-base text-gray-700 border border-gray-900 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 py-4 lg:py-2 pr-4 pl-4 block"
+                        class="appearance-none block w-full bg-gray-200 text-2xl lg:text-base text-gray-700 border-gray-900 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 py-4 lg:py-2 pr-4 pl-4 block"
                         type="text"
                         placeholder="Search"
                       />
@@ -654,7 +654,7 @@
                     />
                   </div>
                   <div
-                    class="flex justify-between flex-col p-4 categoryCaption"
+                    class="flex justify-between flex-col md:p-4 p-2 categoryCaption"
                   >
                     <h1
                       class="text-base md:text-2xl font-semibold leading-normal hover:text-blue-500"
@@ -991,6 +991,10 @@
       </section>
       <!-- End: Items Carousel -->
 
+      <div id="video-player" class="hidden">
+        <video src="https://www.youtube.com/watch?v=39iyB787lsw"></video>
+      </div>
+
       <!-- Begin: Items List -->
       <section class="bg-main-gray">
         <div class="container mx-auto py-6 px-2 md:px-6">
@@ -1105,7 +1109,7 @@
                       <span class="underline">Read more</span>
                     </p>
                     <div class="flex justify-start items-center mt-4">
-                      <a href="#">
+                      <button>
                         <span
                           class="bg-main-black hover:bg-yellow-700 rounded-full p-2 flex justify-even items-center mr-2 h-8 w-8"
                         >
@@ -1121,10 +1125,10 @@
                             />
                           </svg>
                         </span>
-                      </a>
-                      <a href="#">
+                      </button>
+                      <button>
                         <span
-                          class="bg-main-black hover:bg-yellow-700 rounded-full p-2 flex justify-even items-center mr-2 h-8 w-8"
+                          class="video-trigger bg-main-black hover:bg-yellow-700 rounded-full p-2 flex justify-even items-center mr-2 h-8 w-8"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -1138,7 +1142,7 @@
                             />
                           </svg>
                         </span>
-                      </a>
+                      </button>
                       <p class="text-sm">S1EP2 | AUG 1 | 50 MINS</p>
                     </div>
                   </div>
@@ -1149,7 +1153,7 @@
               <div class="sm:hidden bg-white flex hover:shadow cursor-pointer">
                 <div class="w-full p-2">
                   <div class="flex justify-between">
-                    <div class="w-1/4 mr-2">
+                    <div class="w-1/4 mr-2 mt-2">
                       <img
                         src="assets/img/img1/d-pacs.png"
                         alt="schedule img"
@@ -1210,7 +1214,7 @@
                       <span class="underline">Read more</span>
                     </p>
                     <div class="flex justify-start items-center mt-4">
-                      <a href="#">
+                      <button>
                         <span
                           class="bg-main-black hover:bg-yellow-700 rounded-full p-2 flex justify-even items-center mr-2 h-8 w-8"
                         >
@@ -1226,10 +1230,10 @@
                             />
                           </svg>
                         </span>
-                      </a>
-                      <a href="#">
+                      </button>
+                      <button>
                         <span
-                          class="bg-main-black hover:bg-yellow-700 rounded-full p-2 flex justify-even items-center mr-2 h-8 w-8"
+                          class="video-trigger bg-main-black hover:bg-yellow-700 rounded-full p-2 flex justify-even items-center mr-2 h-8 w-8"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -1243,7 +1247,7 @@
                             />
                           </svg>
                         </span>
-                      </a>
+                      </button>
                       <p class="text-xs ml-4">S1EP2 | AUG 1 | 50 MINS</p>
                     </div>
                   </div>
