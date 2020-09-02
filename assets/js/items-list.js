@@ -2,9 +2,9 @@ window.addEventListener('DOMContentLoaded', () => {
   let isNewestDropdownOpen = false;
   const dropdownTrigger = document.getElementById('newest-item-dropdown-trigger');
   const dropdownMenu = document.getElementById('newest-item-dropdown-menu');
-  const videoPlayerDiv = document.getElementById('video-player');
+  const videoPlayerWrapper = document.getElementById('video-player-wrapper');
   const videoTrigger = document.querySelectorAll('.video-trigger');
-  const isPlayerOpen = false;
+  const videoPlayer = document.getElementById('video-player');
   
 
   dropdownTrigger.addEventListener('click', () => {
@@ -16,7 +16,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   videoTrigger.forEach((trigger) => {
     trigger.addEventListener('click', () => {
-      videoPlayerDiv.classList.remove('hidden');
+      // Set the new url for the videoPlayer. For example
+      // videoPlayer.src = "https://www.youtube.com/watch?v=39iyB787lsw"
+      videoPlayerWrapper.classList.remove('hidden');
     })
   })
 })
