@@ -129,7 +129,7 @@
                 >
                   <div
                     id="js-searchbar"
-                    class="relative w-full lg:w-2/4 invisible"
+                    class="relative w-full lg:w-2/4 customInvisible"
                   >
                     <span>
                       <input
@@ -223,7 +223,7 @@
                     world.
                   </h1>
                   <button
-                    class="inline-flex items-center bg-main-black text-white text-lg font-semibold capitalize mt-4 lg:mt-8 py-2 px-6 hover:bg-gray-900 hover:shadow-xl transition ease-in duration-150"
+                    class="inline-flex items-center bg-main-black text-white hover:text-black text-lg font-semibold capitalize mt-4 lg:mt-8 py-3 px-10 hover:bg-transparent border-2 border-black hover:border-black transition ease-in duration-150"
                   >
                     Listen Now
                   </button>
@@ -307,7 +307,7 @@
                     Still processing the internet of things
                   </h1>
                   <button
-                    class="inline-flex items-center bg-main-black text-white text-lg font-semibold capitalize mt-4 lg:mt-8 py-2 px-6 hover:bg-gray-900 hover:shadow-xl transition ease-in duration-150"
+                    class="inline-flex items-center bg-main-black text-white hover:text-black text-lg font-semibold capitalize mt-4 lg:mt-8 py-3 px-10 hover:bg-transparent border-2 border-black hover:border-black transition ease-in duration-150"
                   >
                     Listen Now
                   </button>
@@ -391,7 +391,7 @@
                     Richie vs. Legend!
                   </h1>
                   <button
-                    class="inline-flex items-center bg-main-black text-white text-lg font-semibold capitalize mt-4 lg:mt-8 py-2 px-6 hover:bg-gray-900 hover:shadow-xl transition ease-in duration-150"
+                    class="inline-flex items-center bg-main-black text-white hover:text-black text-lg font-semibold capitalize mt-4 lg:mt-8 py-3 px-10 hover:bg-transparent border-2 border-black hover:border-black transition ease-in duration-150"
                   >
                     Listen Now
                   </button>
@@ -475,7 +475,7 @@
                     Still processing the internet of things
                   </h1>
                   <button
-                    class="inline-flex items-center bg-main-black text-white text-lg font-semibold capitalize mt-4 lg:mt-8 py-2 px-6 hover:bg-gray-900 hover:shadow-xl transition ease-in duration-150"
+                    class="inline-flex items-center bg-main-black text-white hover:text-black text-lg font-semibold capitalize mt-4 lg:mt-8 py-3 px-10 hover:bg-transparent border-2 border-black hover:border-black transition ease-in duration-150"
                   >
                     Listen Now
                   </button>
@@ -548,7 +548,7 @@
               class="absolute right-0 md:inset-x-auto bottom-0 z-2 md:w-full h-60 carousel-control-group"
             >
               <div class="relative h-full">
-                <div class="flex justify-between top-50 md:hidden">
+                <div class="flex justify-between top-50 md:hidden invisible">
                   <button
                     for="carousel-4"
                     class="carousel-control next control-1"
@@ -793,7 +793,7 @@
 
             <div
               id="item-1-content"
-              class="mt-4 w-full overflow-y-scroll item-content"
+              class="mt-4 w-full overflow-x-scroll item-content"
             >
               <div class="inline-flex md:flex justify-between width-150">
                 <a href="#" class="w-2/5 md:w-1/3 block mr-2">
@@ -891,7 +891,7 @@
 
             <div
               id="item-2-content"
-              class="mt-4 w-full overflow-y-scroll item-content hidden"
+              class="mt-4 w-full overflow-x-scroll item-content hidden"
             >
               <div class="inline-flex md:flex justify-between width-150">
                 <a href="#" class="w-2/5 md:w-1/3 block mr-2">
@@ -994,7 +994,11 @@
       <!-- Video Player -->
       <section id="video-player-wrapper" class="bg-main-gray hidden">
         <div class="container m-auto md:w-2/3 w-full px-3">
-          <video id="video-player" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" controls>
+          <video
+            id="video-player"
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+            controls
+          >
             Sorry, your browser doesn't support embedded videos.
           </video>
         </div>
@@ -1262,7 +1266,7 @@
             </div>
 
             <button
-              class="bg-transparent hover:bg-gray-900 text-black text-xl font-semibold hover:text-white py-3 px-10 border-2 border-gray-900 hover:border-transparent mt-6"
+              class="bg-main-black hover:bg-transparent text-white hover:text-black text-xl font-semibold py-3 px-10 border-2 border-black mt-6"
             >
               Load more
             </button>
