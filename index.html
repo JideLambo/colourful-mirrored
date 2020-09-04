@@ -993,14 +993,22 @@
 
       <!-- Video Player -->
       <section id="video-player-wrapper" class="bg-main-gray hidden">
-        <div class="container m-auto md:w-2/3 w-full px-3">
+        <div class="container m-auto md:w-1/2 w-full px-3 md:px-0 relative">
           <video
             id="video-player"
+            class="w-full"
             src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
             controls
           >
             Sorry, your browser doesn't support embedded videos.
           </video>
+          <div class="absolute right-0 top-0 pr-2 md:pr-0">
+            <button class="w-8 h-8 my-2 mx-2 shadow-md" id="close-video">
+              <span>
+                <img src="assets/img/cancel.svg" alt="close window" />
+              </span>
+            </button>
+          </div>
         </div>
       </section>
       <!-- End: Video Play -->
