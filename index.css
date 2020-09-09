@@ -2,6 +2,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+
 }
 :root {
   --main-color-turquoise: #27dcc4;
@@ -337,4 +338,13 @@ body {
     width: 220px;
     height: 70px;
   }
+}
+/* ScrollBar Visibility */
+.item-content {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+.item-content::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
 }
