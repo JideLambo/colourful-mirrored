@@ -25,6 +25,9 @@ body {
 .bg-red {
   background-color: var(--main-color-red);
 }
+.bg-red:hover {
+  background-color: var(--main-color-red2);
+}
 .bg-red-deep {
   background-color: var(--main-color-red2);
 }
@@ -70,7 +73,10 @@ body {
 }
 
 .bottom-20 {
-  bottom: 20px;
+  bottom: 10px;
+}
+.top-35 {
+  top: 35px;
 }
 .top-50 {
   top: 50%;
@@ -98,7 +104,7 @@ body {
   transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
-.invisible {
+.customInvisible {
   visibility: hidden;
 }
 
@@ -132,7 +138,7 @@ body {
   top: -90px;
   right: 0;
   display: block;
-  background-image: url(assets/img/clipShape.svg);
+  background-image: url(assets/img/clipShape1.svg);
   background-repeat: no-repeat;
   width: 30%;
   height: 650px;
@@ -152,7 +158,7 @@ body {
   right: 50px;
 }
 .categoryPhoto {
-  max-height: 70%;
+  height: 70%;
   overflow: hidden;
 }
 .categoryCaption {
@@ -195,12 +201,41 @@ body {
   display: block;
   background-image: url(assets/img/clipShape2.svg);
   background-repeat: no-repeat;
-  width: 431px;
+  width: 220px;
   height: 338px;
   z-index: 0;
 }
+.img-cover-height {
+  height: 430px;
+  overflow: hidden;
+}
 
-@media only screen and (min-width: 320px) and (max-width: 414px) {
+.footer-logo img {
+  width: 67px;
+  height: 67px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .carousel-control-group {
+    bottom: calc(100% - 280px);
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 375px) {
+  .carousel-control-group {
+    bottom: calc(100% - 290px);
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .carousel-control-group {
+    bottom: calc(100% - 280px);
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 480px) {
+  .carousel-control-group {
+    bottom: calc(100% - 280px);
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 425px) {
   .h-half {
     height: 50%;
   }
@@ -218,14 +253,12 @@ body {
     margin-top: 15px;
     margin-bottom: 20px;
   }
-  .carousel-control-group {
-    bottom: calc(100% - 260px);
-  }
+
   .min-h-32 {
     min-height: 6rem;
     max-height: 6rem;
   }
-  .invisible {
+  .customInvisible {
     visibility: visible;
   }
   .width-150 {
@@ -235,10 +268,9 @@ body {
     height: 100vh;
     position: fixed;
     z-index: 20;
-    overflow-y: scroll;
   }
   .categorySmPhoto {
-    width: 45%;
+    width: 35%;
   }
   .categorySmOption {
     width: 85%;
@@ -252,7 +284,15 @@ body {
   .right-50 {
     right: 0;
   }
+  .hero-bg-transform::after {
+    top: -210px;
+    width: 65%;
+  }
   .background-landing-clip::before {
+    width: 150px;
+    height: 90px;
+  }
+  .background-landing-clip::after {
     width: 150px;
     height: 90px;
   }
@@ -262,11 +302,24 @@ body {
   .carousel-control-group {
     z-index: 10;
   }
-}
-@media only screen and (min-width: 415px) and (max-width: 768px) {
-  .carousel-control-group {
-    bottom: calc(100% - 280px);
+  .img-cover-height {
+    height: 235px;
+    overflow-y: hidden;
   }
+  .footer-logo img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .fixed-mobile-menu {
+    height: 100vh;
+    position: fixed;
+    z-index: 20;
+  }
+  /* .carousel-control-group {
+    bottom: calc(100% - 280px);
+  } */
   .min-h-32 {
     min-height: 8rem;
     max-height: 8rem;
@@ -277,11 +330,58 @@ body {
   .width-150 {
     width: 160%;
   }
+  .customInvisible {
+    visibility: visible;
+  }
+  .background-landing-clip::after {
+    width: 220px;
+    height: 70px;
+  }
+}
+/* ScrollBar Visibility */
+.item-content {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+.item-content::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
 }
 
-.footer-logo {
-  background-image: url(assets/img/logowhite.svg);
-  background-repeat: no-repeat;
-  width: 67px;
-  height: 67px;
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.card-bg-height {
+  height: 577px;
+}
+
+.card-sm-height {
+  height: 278px;
+}
+
+.podcast-lg-card {
+  height: 233px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 425px) {
+  .card-bg-height {
+    height: 370px;
+  }
+
+  .card-sm-height {
+    height: 90px;
+  }
+
+  .podcast-lg-card {
+    height: 165px;
+  }
+
+  .podcast-card-wrapper {
+    width: 46%;
+  }
 }
