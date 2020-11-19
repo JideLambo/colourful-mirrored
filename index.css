@@ -1,7 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+/* Silka Regular */
+@font-face {
+  font-family: "silkaregular";
+  src: url("/assets/fonts/silka-regular-webfont.eot");
+  src: url("/assets/fonts/silka-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/silka-regular-webfont.woff2") format("woff2"),
+    url("/assets/fonts/silka-regular-webfont.woff") format("woff"),
+    url("/assets/fonts/silka-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
+  font-family: "silkaregular", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Manrope", sans-serif;
 }
+
 :root {
   --main-color-turquoise: #27dcc4;
   --main-color-red: #da3456;
@@ -157,11 +179,11 @@ body {
   right: 50px;
 }
 .categoryPhoto {
-  height: 70%;
+  height: 68%;
   overflow: hidden;
 }
 .categoryCaption {
-  height: 30%;
+  height: 32%;
 }
 .categorySmOption {
   width: 60%;
@@ -241,7 +263,12 @@ body {
 }
 
 .podcast-lg-card {
-  height: 296px;
+  height: 295px;
+  width: 295px;
+}
+
+.podcast-card-wrapper {
+  width: 295px;
 }
 
 /* Tabs */
@@ -261,7 +288,11 @@ body {
   height: 141px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 359px) {
+.carousel-img-wrapper {
+  width: 53%;
+}
+
+.podcast-i @media only screen and (min-width: 320px) and (max-width: 359px) {
   .carousel-control-group {
     bottom: calc(100% - 280px);
   }
@@ -273,6 +304,9 @@ body {
   }
   .tab-img-wrapper {
     max-width: 69px;
+  }
+  .carousel-img-wrapper {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 360px) and (max-width: 375px) {
@@ -287,6 +321,9 @@ body {
   }
   .tab-img-wrapper {
     max-width: 69px;
+  }
+  .carousel-img-wrapper {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 425px) {
@@ -304,15 +341,20 @@ body {
   }
 
   .card-sm-height {
-    height: 90px;
+    height: 108px;
   }
 
   .podcast-lg-card {
     height: 165px;
+    width: 100%;
   }
 
   .podcast-card-wrapper {
-    width: 46%;
+    width: 48.5%;
+  }
+
+  .carousel-img-wrapper {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 376px) and (max-width: 425px) {
@@ -328,6 +370,9 @@ body {
   .tab-img-wrapper {
     max-width: 69px;
   }
+  .carousel-img-wrapper {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 425px) and (max-width: 480px) {
   .carousel-control-group {
@@ -341,6 +386,9 @@ body {
   }
   .tab-img-wrapper {
     max-width: 69px;
+  }
+  .carousel-img-wrapper {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 425px) {
@@ -420,6 +468,9 @@ body {
   .footer-logo img {
     width: 50px;
     height: 50px;
+  }
+  .carousel-img-wrapper {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 426px) and (max-width: 768px) {
