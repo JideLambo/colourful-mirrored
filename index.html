@@ -178,11 +178,11 @@
 
     <main>
       <!-- Begin: Hero Section -->
-      <section class="bg-turquoise hero-bg-transform relative">
+      <section class="bg-turquoise hero-bg-transform relative overflow-hidden">
         <div class="container mx-auto px-4 lg:px-6 xl:px-0">
           <div class="relative overflow-hidden w-full">
             <div
-              class="flex flex-wrap justify-between flex-col-reverse md:flex-row py-4 md:py-10 carousel-item active-carousel"
+              class="flex flex-wrap justify-between flex-col-reverse md:flex-row pt-4 pb-8 md:py-10 carousel-item active-carousel"
               id="carousel-1"
             >
               <div class="w-full md:w-5/12 z-10">
@@ -1244,7 +1244,7 @@
             </div>
 
             <div class="mt-4">
-              <div class="flex cursor-pointer md:h-40 border-b border-gray-400 pb-4">
+              <div class="flex items-center cursor-pointer md:h-40 border-b border-gray-400 pb-4">
                 <div class="hidden md:block h-full md:p-0 overflow-hidden episode-card-img">
                   <img
                     src="https://content.production.cdn.art19.com/images/44/f7/bb/b8/44f7bbb8-40ce-4a63-8ab8-9bc1cd71f4be/8343534d6192d0016c12db2ac6925885d35255a56e2933d553a7eb7d34c17e11a714ec9bc43c44fc8172ed637395c552f56fa3f7aefe961e2392b0681f4cd9f1.jpeg"
@@ -1258,7 +1258,7 @@
                       <div class="flex">
                         <div class="w-9/12 md:w-10/12">
                           <h4
-                            class="text-base md:text-2xl capitalize font-bold md:font-bold text-black leading-tight"
+                            class="text-lg md:text-2xl capitalize font-bold md:font-bold text-black leading-tight mb-1"
                             >
                             Introducing the Trevor Noah Podcast, Season 2
                           </h4>
@@ -1283,7 +1283,57 @@
                           Louis is using the lockdown to track down some of the
                           people he's ...
                         </p>
-                        <a href="#" class="py-4"><span class="text-sm text-black md:text-opacity-50 underline md:no-underline">Read more</span></a>
+                        <a href="#" class="py-4"><span class="text-xs text-black underline">Read more</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- below is for mobile view. hide for web view -->
+            </div>
+
+            <div class="mt-4">
+              <div class="flex items-center cursor-pointer md:h-40 border-b border-gray-400 pb-4">
+                <div class="hidden md:block h-full md:p-0 overflow-hidden episode-card-img">
+                  <img
+                    src="https://ichef.bbci.co.uk/images/ic/400x400/p08vtxpt.jpg"
+                    alt="schedule img"
+                    class="object-cover h-full w-full"
+                  />
+                </div>
+                <div class="w-full md:w-4/5 ml-0 md:ml-4 min-h-full overflow-hidden">
+                  <div>
+                    <div class="w-full">
+                      <div class="flex">
+                        <div class="w-9/12 md:w-10/12">
+                          <h4
+                            class="text-lg md:text-2xl capitalize font-bold md:font-bold text-black leading-tight mb-1"
+                            >
+                            Introducing the Trevor Noah Podcast, Season 2
+                          </h4>
+                          <p class="text-xs md:text-sm text-gray-900 md:text-opacity-75">S1 EP2 | 1 Aug, 2020 | 50 Mins</p>
+                        </div>
+                        <div class="w-3/12 md:w-2/12 flex justify-center">
+                          <button>
+                            <span
+                              class="hover:bg-yellow-700 rounded-full flex justify-even items-center h-10 w-10"
+                            >
+                            <svg width="40" height="40">
+                              <path data-name="Path 1085" d="M0 0h40v40H0z" fill="none"/>
+                              <path data-name="Path 1086" d="M20 2a18 18 0 1018 18A18.007 18.007 0 0020 2zm-3.6 26.1V11.9L27.2 20z"/>
+                            </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+
+                      <div class="w-9/12 md:w-10/12">
+                        <p class="hidden md:block text-sm text-black-1 mt-6 md:mt-4">
+                          Louis is using the lockdown to track down some of the
+                          people he's ...
+                        </p>
+                        <a href="#" class="py-4 bottom-0"><span class="text-sm text-black md:text-opacity-50 underline md:no-underline">Read more</span></a>
                       </div>
                     </div>
                   </div>
@@ -1294,10 +1344,10 @@
             </div>
 
             <button
-              class="bg-main-black hover:bg-transparent text-white hover:text-black text-xl font-bold py-3 px-6 border-2 border-black mt-6"
-            >
+                class="inline-flex items-center bg-main-black text-white hover:text-black text-base font-bold capitalize mt-4 py-3 px-6 hover:bg-transparent border-2 border-black hover:border-black transition ease-in duration-150"
+              >
               Load more
-            </button>
+              </button>
           </div>
         </div>
       </section>
@@ -1308,7 +1358,7 @@
         <div class="container mx-auto py-6 px-4 md:px-6">
           <div class="lg:w-3/5 lg:w-3/5">
             <div class="mt-4">
-              <ul class="inline-flex justify-between w-full overflow-x-scroll">
+              <ul class="inline-flex justify-between w-full overflow-x-scroll tab-control">
                 <li
                   id="monday"
                   class="px-2 py-4 md:px-6 md:py-3 tab-pills-2 bg-black text-white text-xs md:text-sm font-semibold text-center uppercase cursor-pointer border-gray-100 border-l-2 border-r-2 w-full"
@@ -1355,7 +1405,7 @@
             </div>
             <!-- Monday -->
             <div id="monday-content" class="mt-6 w-full news-content">
-              <div class="hover:border-green-600 border-l-4 mb-4 cursor-pointer">
+              <div class="hover:border-green-600 border-l-4 mb-2 md:mb-4 cursor-pointer">
                 <div class="bg-white flex w-full overflow-hidden tab-wrapper">
                   <div
                     class="flex justify-between items-center tab-time-wrapper"
@@ -1366,26 +1416,27 @@
                   </div>
                   <div class="overflow-hidden tab-img-wrapper">
                     <img
-                      src="http://multimedia.colourfulradio.com/team/icon.png"
+                      src="assets/img/img1/trevor.png"
                       alt="schedule img"
                       class="w-full h-full object-cover"
                     />
                   </div>
-                  <div class="p-4 md:pr-16">
+                  <div class="p-4 md:pr-16 flex md:block items-center">
                     <h4
-                      class="text-sm md:text-lg capitalize font-medium md:font-semibold text-black"
+                      class="text-sm md:text-lg capitalize font-medium md:font-semibold text-black md:mb-2"
                     >
-                      All night long
+                    Under the Skin with Russell Brand        
                     </h4>
-                    <p class="hidden md:block text-sm text-black-1">
+                    <p class="line-clamp-2 hidden md:block text-sm text-black-1">
                       Get the latest news, reviews, gossip and commentary from
+                      across the Continent. Get the latest news, reviews, gossip and commentary from
                       across the Continent.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="hover:border-green-600 border-l-4 mb-4 cursor-pointer">
+              <div class="hover:border-green-600 border-l-4 mb-2 md:mb-4 cursor-pointer">
                 <div class="bg-white flex w-full overflow-hidden tab-wrapper">
                   <div
                     class="flex justify-between items-center tab-time-wrapper"
@@ -1396,19 +1447,20 @@
                   </div>
                   <div class="overflow-hidden tab-img-wrapper">
                     <img
-                      src="http://multimedia.colourfulradio.com/team/icon.png"
+                      src="assets/img/img1/trevor.png"
                       alt="schedule img"
                       class="w-full h-full object-cover"
                     />
                   </div>
-                  <div class="p-4 md:pr-16">
+                  <div class="p-4 md:pr-16 flex md:block items-center">
                     <h4
-                      class="text-sm md:text-lg capitalize font-medium md:font-semibold text-black"
+                      class="text-sm md:text-lg capitalize font-medium md:font-semibold text-black md:mb-2"
                     >
-                      All night long
+                    Under the Skin with Russell Brand        
                     </h4>
-                    <p class="hidden md:block text-sm text-black-1">
+                    <p class="line-clamp-2 hidden md:block text-sm text-black-1">
                       Get the latest news, reviews, gossip and commentary from
+                      across the Continent. Get the latest news, reviews, gossip and commentary from
                       across the Continent.
                     </p>
                   </div>
@@ -1416,8 +1468,8 @@
               </div>
             </div>
             <!-- Tuesday  -->
-            <div id="tuesday-content" class="mt-6 w-full news-content hidden">
-              <div class="hover:border-green-600 border-l-4 mb-4 cursor-pointer">
+            <div id="tuesday-content" class="mt-6 w-full news-content">
+              <div class="hover:border-green-600 border-l-4 mb-2 md:mb-4 cursor-pointer">
                 <div class="bg-white flex w-full overflow-hidden tab-wrapper">
                   <div
                     class="flex justify-between items-center tab-time-wrapper"
@@ -1428,26 +1480,27 @@
                   </div>
                   <div class="overflow-hidden tab-img-wrapper">
                     <img
-                      src="http://multimedia.colourfulradio.com/team/icon.png"
+                      src="assets/img/img1/trevor.png"
                       alt="schedule img"
                       class="w-full h-full object-cover"
                     />
                   </div>
-                  <div class="p-4 md:pr-16">
+                  <div class="p-4 md:pr-16 flex md:block items-center">
                     <h4
-                      class="text-sm md:text-lg capitalize font-medium md:font-semibold text-black"
+                      class="text-sm md:text-lg capitalize font-medium md:font-semibold text-black md:mb-2"
                     >
-                      All night long
+                    Under the Skin with Russell Brand        
                     </h4>
-                    <p class="hidden md:block text-sm text-black-1">
+                    <p class="line-clamp-2 hidden md:block text-sm text-black-1">
                       Get the latest news, reviews, gossip and commentary from
+                      across the Continent. Get the latest news, reviews, gossip and commentary from
                       across the Continent.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="hover:border-green-600 border-l-4 mb-4 cursor-pointer">
+              <div class="hover:border-green-600 border-l-4 mb-2 md:mb-4 cursor-pointer">
                 <div class="bg-white flex w-full overflow-hidden tab-wrapper">
                   <div
                     class="flex justify-between items-center tab-time-wrapper"
@@ -1458,25 +1511,27 @@
                   </div>
                   <div class="overflow-hidden tab-img-wrapper">
                     <img
-                      src="http://multimedia.colourfulradio.com/team/icon.png"
+                      src="assets/img/img1/trevor.png"
                       alt="schedule img"
                       class="w-full h-full object-cover"
                     />
                   </div>
-                  <div class="p-4 md:pr-16">
+                  <div class="p-4 md:pr-16 flex md:block items-center">
                     <h4
-                      class="text-sm md:text-lg capitalize font-medium md:font-semibold text-black"
+                      class="text-sm md:text-lg capitalize font-medium md:font-semibold text-black md:mb-2"
                     >
-                      All night long
+                    Under the Skin with Russell Brand        
                     </h4>
-                    <p class="hidden md:block text-sm text-black-1">
+                    <p class="line-clamp-2 hidden md:block text-sm text-black-1">
                       Get the latest news, reviews, gossip and commentary from
+                      across the Continent. Get the latest news, reviews, gossip and commentary from
                       across the Continent.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       </section>

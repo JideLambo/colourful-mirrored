@@ -156,12 +156,12 @@ h6 {
 .hero-bg-transform::after {
   content: "";
   position: absolute;
-  top: -90px;
+  top: 70px;
   right: 0;
   display: block;
   background-image: url(assets/img/clipShape1.svg);
   background-repeat: no-repeat;
-  width: 30%;
+  width: 40%;
   height: 650px;
   z-index: 0;
 }
@@ -254,6 +254,13 @@ h6 {
   overflow: hidden;
 }
 
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
 .card-bg-height {
   height: 577px;
 }
@@ -276,7 +283,8 @@ h6 {
   height: 115px;
 }
 .tab-time-wrapper {
-  width: 130px;
+  max-width: 115px;
+  width: 100%;
 }
 .tab-img-wrapper {
   max-width: 115px;
@@ -308,6 +316,9 @@ h6 {
   .carousel-img-wrapper {
     width: 100%;
   }
+  .line-clamp-2 {
+    display: none;
+  }
 }
 @media only screen and (min-width: 360px) and (max-width: 375px) {
   .carousel-control-group {
@@ -325,37 +336,45 @@ h6 {
   .carousel-img-wrapper {
     width: 100%;
   }
+  .line-clamp-2 {
+    display: none;
+  }
+  .tab-control li {
+    max-width: 14.2%;
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 300px) and (max-width: 425px) {
   .tab-wrapper {
-    height: 69px;
+    height: 80px;
   }
   .tab-time-wrapper {
-    width: 69px;
+    max-width: 80px;
+    width: 100%;
   }
   .tab-img-wrapper {
-    max-width: 69px;
+    max-width: 80px;
+    width: 100%;
   }
   .card-bg-height {
     height: 370px;
   }
-
   .card-sm-height {
     height: 108px;
   }
-
   .podcast-lg-card {
     height: auto;
     width: 100%;
   }
-
   .podcast-card-wrapper {
     width: 50%;
     padding: 0.5rem;
   }
-
   .carousel-img-wrapper {
     width: 100%;
+  }
+  .line-clamp-2 {
+    display: none;
   }
 }
 @media only screen and (min-width: 376px) and (max-width: 425px) {
@@ -374,6 +393,9 @@ h6 {
   .carousel-img-wrapper {
     width: 100%;
   }
+  .line-clamp-2 {
+    display: none;
+  }
 }
 @media only screen and (min-width: 425px) and (max-width: 480px) {
   .carousel-control-group {
@@ -390,6 +412,9 @@ h6 {
   }
   .carousel-img-wrapper {
     width: 100%;
+  }
+  .line-clamp-2 {
+    display: none;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 425px) {
