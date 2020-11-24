@@ -9,10 +9,6 @@
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body class="antialiased">
@@ -21,16 +17,23 @@
         <nav
           class="flex items-center justify-between md:justify-between flex-wrap lg:flex-row px-2 md:px-6 lg:px-5 xl:px-0 py-4 border-b border-gray-900 z-10 relative"
         >
-          <div class="flex gap-4 lg:hidden">
-            <a href="#">
-              <img
-                src="assets/img/logoblack.png"
-                alt="colorful logo"
-                srcset=""
-              />
-            </a>
+          <div class="block lg:hidden">
             <button class="switch-menu hamburger-menu">
-              <span class="font-semibold text-lg">menu</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35.259"
+                height="35.259"
+              >
+                <path d="M0 0h35.259v35.259H0z" fill="none" />
+                <path
+                  d="M3 17.63h29.259M3 8.815h29.259M3 26.444h29.259"
+                  fill="none"
+                  stroke="#241332"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
             </button>
             <button class="close-menu hamburger-menu hidden">
               <svg
@@ -46,7 +49,7 @@
             </button>
           </div>
 
-          <div class="mr-0 hidden md:block md:w-1/12">
+          <div class="mr-0 md:w-1/12">
             <a href="#">
               <img
                 src="assets/img/logoblack.png"
@@ -57,13 +60,20 @@
           </div>
 
           <button
-            class="lg:hidden inline-flex items-center bg-red text-white text-base font-semibold py-2 px-2"
+            class="lg:hidden inline-flex items-center bg-red text-white text-base font-semibold uppercase py-2 px-2"
           >
-            Listen Live
+            Live
+            <span class="fill-current w-4 h-5 ml-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                <path d="M10 0A10 10 0 110 10 10 10 0 0110 0z" fill="#fff" />
+                <path d="M9.51 6.416h5.979V23.56H9.51z" fill="none" />
+                <path d="M7.5 4.416v10.182l8-5.091z" fill="#bc1f3f" />
+              </svg>
+            </span>
           </button>
 
           <div
-            class="lg:w-11/12 lg:w-auto mobile-menu hidden lg:block lg:h-full"
+            class="lg:w-11/12 lg:w-auto mobile-menu hidden lg:block md:h-full"
           >
             <div class="w-full flex items-center flex-wrap flex-grow">
               <div
@@ -102,13 +112,13 @@
               </div>
 
               <div class="lg:hidden w-full mb-12">
-                <a href="#" class="block text-black text-xl font-semibold">
+                <a href="#" class="block mt-4 text-black text-xl font-semibold">
                   Log in
                 </a>
-                <a href="#" class="block text-black text-xl font-semibold">
+                <a href="#" class="block mt-4 text-black text-xl font-semibold">
                   Media
                 </a>
-                <a href="#" class="block text-black text-xl font-semibold">
+                <a href="#" class="block mt-4 text-black text-xl font-semibold">
                   About
                 </a>
               </div>
@@ -123,7 +133,7 @@
                   >
                     <span>
                       <input
-                        class="appearance-none block w-full bg-gray-200 text-2xl lg:text-base text-gray-700 border border-gray-900 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 py-4 lg:py-2 pr-4 pl-4 block"
+                        class="appearance-none block w-full bg-gray-200 text-2xl lg:text-base text-gray-700 border border-gray-900 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 py-4 lg:py-2 pr-4 pl-4 block"
                         type="text"
                         placeholder="Search"
                       />
@@ -164,9 +174,23 @@
                     Sign in
                   </button>
                   <button
-                    class="lg:inline-flex group focus:text-gray-300 items-center group hidden items-center bg-red text-white text-base font-semibold py-2 px-4"
+                    class="lg:inline-flex group focus:text-gray-300 items-center group hidden items-center bg-red text-white text-base font-semibold uppercase py-2 px-4"
                   >
-                    Listen Live
+                    Live now
+                    <span class="w-4 h-4 ml-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="23.56"
+                      >
+                        <path
+                          d="M10 0A10 10 0 110 10 10 10 0 0110 0z"
+                          fill="#fff"
+                        />
+                        <path d="M9.51 6.416h5.979V23.56H9.51z" fill="none" />
+                        <path d="M7.5 4.416v10.182l8-5.091z" fill="#bc1f3f" />
+                      </svg>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -177,121 +201,30 @@
     </header>
 
     <main>
-      <!-- Begin: Hero Section -->
-      <section class="bg-turquoise hero-bg-transform relative overflow-hidden">
-        <div class="container mx-auto px-4 lg:px-6 xl:px-0">
+      <section class="bg-turquoise hero-bg-transform relative">
+        <div class="container mx-auto px-3 lg:px-6 xl:px-0">
           <div class="relative overflow-hidden w-full">
-            <div
-              class="flex flex-wrap justify-between flex-col-reverse md:flex-row pt-4 pb-8 md:py-10 carousel-item active-carousel"
-              id="carousel-1"
-            >
-              <div class="w-full md:w-5/12 z-10">
-                <a href="#" class="underline pb-0.5 mb-3">
-                  <span
-                    class="capitalize font-semibold text-base text-black"
-                  >
-                    podcasts
-                  </span>
-                </a>
-                <h1
-                  class="text-2xl md:text-5xl lg:text-5xl font-bold text-black-1 mb-4 pb-0 z-10 leading-tight"
-                >
-                Colourful launches on DAB across London
-                </h1>
-                <p>“You can’t just turn up with a new pair of Louboutins without people being like, ‘Oh, where did you get your money from?’”</p>
-                <button
-                  class="inline-flex items-center bg-main-black text-white hover:text-black text-base font-bold capitalize mt-8 lg:mt-12 py-3 px-6 hover:bg-transparent border-2 border-black hover:border-black transition ease-in duration-150"
-                >
-                  Listen Now
-                </button>
-
-                <div class="flex justify-start mt-8">
-                  <a href="#">
-                    <span
-                      class="bg-main-black p-2 flex justify-evenly items-center mr-3 h-8 w-8"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="15"
-                        height="15.052"
-                      >
-                        <path
-                          d="M1.858 3.716V.464a.46.46 0 01.039-.236.673.673 0 01.241-.112l.155-.035v3.63h.619v-3.7h.4v3.7h.619V-.005h8.136a2.8 2.8 0 011.436.387 3.043 3.043 0 011.058 1.046 2.758 2.758 0 01.422 1.411q.016.43.017 1.032-.017 1.274-.017 1.049h-4.61a.3.3 0 01-.241-.1 3.963 3.963 0 00-1.7-.929A3.715 3.715 0 006.54 3.9a4.033 4.033 0 00-1.7.938.248.248 0 01-.172.086H.11l-.086-.017v-.654q-.017.205-.017-.792a7.6 7.6 0 01.035-.791A2.786 2.786 0 011.195.589l.069-.017V3.72h.6zm8.773 1.668h4.352v6.76a2.827 2.827 0 01-.4 1.462 2.908 2.908 0 01-1.067 1.058 2.876 2.876 0 01-1.462.387H2.937a2.713 2.713 0 01-1.462-.379A3.036 3.036 0 01.4 13.606a2.781 2.781 0 01-.4-1.462V5.401h4.352a3.786 3.786 0 00-.482 3.475 3.91 3.91 0 003.087 2.52 3.88 3.88 0 001.643-.129 3.758 3.758 0 001.445-.809 3.653 3.653 0 00.963-1.376 3.88 3.88 0 00.292-1.788 4.167 4.167 0 00-.669-1.91zM7.5 10.545a3 3 0 01-1.5-.387 2.845 2.845 0 01-1.084-1.066 2.963 2.963 0 010-2.958A2.971 2.971 0 016 5.05a2.887 2.887 0 011.488-.4 2.845 2.845 0 011.479.4 3 3 0 011.075 1.084 2.933 2.933 0 01-1.075 4.024 2.918 2.918 0 01-1.47.387zm2.167-2.941a2.2 2.2 0 00-1.084-1.892 2.186 2.186 0 00-2.185 0 2.186 2.186 0 00-.791.792 2.188 2.188 0 000 2.184 2.239 2.239 0 00.791.8 2.073 2.073 0 001.092.3 2.119 2.119 0 001.092-.293 2.176 2.176 0 00.791-.791 2.134 2.134 0 00.294-1.1zm3.957-5.075v-.792a.475.475 0 00-.129-.352.454.454 0 00-.335-.129q-.792-.017-1.6 0a.433.433 0 00-.344.137.53.53 0 00-.12.361v1.583a.476.476 0 00.129.352.454.454 0 00.336.129h1.582a.446.446 0 00.482-.482z"
-                          fill="#f5f6fa"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-                  <a href="#">
-                    <span
-                      class="bg-main-black p-2 flex justify-evenly items-center mr-3 h-8 w-8"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="8"
-                        height="17.252"
-                      >
-                        <path
-                          d="M7.685 8.636h-2.4v8.616H1.699V8.636H0V5.6h1.694V3.628A4.265 4.265 0 011.97 2.07 3.028 3.028 0 013.054.631 3.783 3.783 0 015.3 0l2.66.02v2.958H6.029a.763.763 0 00-.493.158.83.83 0 00-.256.67V5.6h2.719z"
-                          fill="#f5f6fa"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-                  <a href="#">
-                    <span
-                      class="bg-main-black p-2 flex justify-evenly items-center mr-3 h-8 w-8"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="15"
-                        height="12.175"
-                      >
-                        <path
-                          d="M13.459 3.051v.394a8.9 8.9 0 01-.565 3.082 9.184 9.184 0 01-1.678 2.808 8.332 8.332 0 01-2.74 2.056 8.939 8.939 0 01-3.75.787 8.763 8.763 0 01-2.5-.36A8.5 8.5 0 010 10.808q.36.034.736.034a6.113 6.113 0 002.038-.342 6.392 6.392 0 001.781-.959 3.075 3.075 0 01-1.781-.625 2.964 2.964 0 01-1.079-1.515 3.052 3.052 0 00.565.052 3.163 3.163 0 00.8-.1 2.968 2.968 0 01-1.25-.574A3.05 3.05 0 01.928 5.7a3.2 3.2 0 01-.334-1.361v-.051a2.886 2.886 0 001.4.394 3.1 3.1 0 01-1-1.1 3.008 3.008 0 01-.368-1.464A3.059 3.059 0 011.037.577a8.781 8.781 0 006.336 3.219 3.558 3.558 0 01-.068-.7 3 3 0 01.411-1.541A3.1 3.1 0 018.838.433a2.967 2.967 0 011.533-.419 3.049 3.049 0 012.243.977 5.979 5.979 0 001.952-.754 2.974 2.974 0 01-.522.984 3.157 3.157 0 01-.83.728 6.258 6.258 0 001.781-.5 6.434 6.434 0 01-1.536 1.602z"
-                          fill="#f5f6fa"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="w-full carousel-img-wrapper mb-4 md:mb-0">
-                <div class="relative w-full img-cover-height z-10">
-                  <a href="#">
-                    <img
-                      class="h-full w-full object-cover"
-                      src="https://www.rollingstone.com/wp-content/uploads/2018/06/e581e1c39ee28e05e24642fd2098e0f86751f5bfc3fd6e42df706ff7d2ea0ce5de2009f3af8e181c3e34dc6cab234ac4-5376fd0c-989c-4c2f-a137-2441275676e6.jpg"
-                      alt="richie-legend"
-                      loading="lazy"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="relative overflow-hidden w-full">
             <div>
               <div
                 class="flex flex-wrap justify-between flex-col-reverse md:flex-row py-4 md:py-10 carousel-item active-carousel"
                 id="carousel-1"
               >
-                <div class="w-full md:w-5/12 z-10">
-                  <a href="#" class="underline pb-0.5 mb-2.5">
-                    <span
-                      class="uppercase font-semibold text-base text-black"
-                    >
-                      win
-                    </span>
-                  </a>
-                  <h1
-                    class="text-2xl md:text-5xl lg:text-5xl font-bold text-black-1 mb-6 pb-0 z-10 leading-tight"
+                <div class="w-full md:w-2/5 lg:w-1/3 z-10">
+                  <span
+                    class="bg-red-deep p-1 uppercase font-semibold text-xs text-white"
                   >
-                  Colourful launches on DAB across London
-                  </h1>
-                  <p>“You can’t just turn up with a new pair of Louboutins without people being like, ‘Oh, where did you get your money from?’”</p>
+                    on air
+                  </span>
+                  <a href="#">
+                    <h1
+                      class="text-2xl md:text-3xl lg:text-4xl font-bold text-black-1 mb-0 pb-0 z-10 leading-normal"
+                    >
+                    Colourful launches on DAB across London
+                    </h1>
+                  </a>
+                  <p class="mt-2 line-clamp-3">The pioneering online radio station now broadcasts across greater London on Global’s capacity on the London 3 DAB Multiplex. Global’s capacity on the London 3 DAB Multiplex.</p>
                   <button
-                    class="inline-flex items-center bg-main-black text-white hover:text-black text-base font-bold capitalize mt-4 lg:mt-12 py-3 px-6 hover:bg-transparent border-2 border-black hover:border-black transition ease-in duration-150"
+                    class="inline-flex items-center bg-main-black text-white hover:text-black text-lg font-semibold capitalize mt-4 lg:mt-8 py-3 px-10 hover:bg-transparent border-2 border-black hover:border-black transition ease-in duration-150"
                   >
                     Listen Now
                   </button>
@@ -347,12 +280,12 @@
                     </a>
                   </div>
                 </div>
-                <div class="w-full carousel-img-wrapper mb-8 md:mb-0">
+                <div class="w-full md:w-3/5 mb-8 md:mb-0">
                   <div class="relative w-full img-cover-height z-10">
                     <a href="#">
                       <img
                         class="h-full w-full object-cover"
-                        src="https://www.rollingstone.com/wp-content/uploads/2018/06/e581e1c39ee28e05e24642fd2098e0f86751f5bfc3fd6e42df706ff7d2ea0ce5de2009f3af8e181c3e34dc6cab234ac4-5376fd0c-989c-4c2f-a137-2441275676e6.jpg"
+                        src="http://multimedia.colourfulradio.com/content/carnivalRadio.png"
                         alt="richie-legend"
                         loading="lazy"
                       />
@@ -365,20 +298,22 @@
                 class="flex flex-wrap justify-between flex-col-reverse md:flex-row py-4 md:py-10 carousel-item carousel-transition active-carousel"
                 id="carousel-2"
               >
-                <div class="w-full md:w-5/12 z-10">
+                <div class="w-full md:w-2/5 lg:w-1/3 z-10">
                   <span
                     class="bg-red-deep p-1 uppercase font-semibold text-xs text-white"
                   >
                     on air
                   </span>
-                  <h1
-                    class="text-2xl md:text-3xl lg:text-4xl font-bold text-black-1 mb-6 pb-0 z-10 leading-snug"
-                  >
-                  AfroTech on the internet of things
-                  </h1>
-                  <p>“You can’t just turn up with a new pair of Louboutins without people being like, ‘Oh, where did you get your money from?’”</p>
+                  <a href="#">
+                    <h1
+                      class="text-2xl md:text-3xl lg:text-4xl font-bold text-black-1 mb-0 pb-0 z-10 leading-normal"
+                    >
+                    Black people encouraged to lose weight and cut covid-19 risk
+                    </h1>
+                  </a>
+                  <p class="mt-2 line-clamp-3">New campaign urges adults to become more active and make heathier food choices to prevent weight gain</p>
                   <button
-                    class="inline-flex items-center bg-main-black text-white hover:text-black text-base font-bold capitalize mt-4 lg:mt-8 py-3 px-6 hover:bg-transparent border-2 border-black hover:border-black transition ease-in duration-150"
+                    class="inline-flex items-center bg-main-black text-white hover:text-black text-lg font-semibold capitalize mt-4 lg:mt-8 py-3 px-10 hover:bg-transparent border-2 border-black hover:border-black transition ease-in duration-150"
                   >
                     Listen Now
                   </button>
@@ -434,7 +369,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="w-full md:w-7/12 mb-8 md:mb-0">
+                <div class="w-full md:w-3/5 mb-8 md:mb-0">
                   <div class="relative w-full img-cover-height z-10">
                     <a href="#">
                       <img
@@ -452,20 +387,19 @@
                 class="flex flex-wrap justify-between flex-col-reverse md:flex-row py-4 md:py-10 carousel-item carousel-transition active-carousel"
                 id="carousel-3"
               >
-                <div class="w-full md:w-5/12 z-10">
+                <div class="w-full md:w-2/5 lg:w-1/3 z-10">
                   <span
                     class="bg-red-deep p-1 uppercase font-semibold text-xs text-white"
                   >
                     on air
                   </span>
                   <h1
-                    class="text-2xl md:text-3xl lg:text-4xl font-bold text-black-1 mb-6 pb-0 z-10 leading-snug"
+                    class="text-2xl md:text-3xl lg:text-4xl font-bold text-black-1 mb-0 pb-0 z-10 leading-normal"
                   >
-                  AfroTech on the internet of things
+                    Richie vs. Legend!
                   </h1>
-                  <p>“You can’t just turn up with a new pair of Louboutins without people being like, ‘Oh, where did you get your money from?’”</p>
                   <button
-                    class="inline-flex items-center bg-main-black text-white hover:text-black text-base font-bold capitalize mt-4 lg:mt-8 py-3 px-6 hover:bg-transparent border-2 border-black hover:border-black transition ease-in duration-150"
+                    class="inline-flex items-center bg-main-black text-white hover:text-black text-lg font-semibold capitalize mt-4 lg:mt-8 py-3 px-10 hover:bg-transparent border-2 border-black hover:border-black transition ease-in duration-150"
                   >
                     Listen Now
                   </button>
@@ -521,7 +455,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="w-full md:w-7/12 mb-8 md:mb-0">
+                <div class="w-full md:w-3/5 mb-8 md:mb-0">
                   <div class="relative w-full img-cover-height z-10">
                     <iframe class="h-full w-full object-cover" id="youtubeplayer" type="text/html" src="https://www.youtube.com/embed/vloBZvz6Hbk?autoplay=False&amp;origin=Colourful" frameborder="0"></iframe>
                   </div>
@@ -532,20 +466,19 @@
                 class="flex flex-wrap justify-between flex-col-reverse md:flex-row py-4 md:py-10 carousel-item carousel-transition active-carousel"
                 id="carousel-4"
               >
-                <div class="w-full md:w-5/12 z-10">
+                <div class="w-full md:w-2/5 lg:w-1/3 z-10">
                   <span
                     class="bg-red-deep p-1 uppercase font-semibold text-xs text-white"
                   >
                     on air
                   </span>
                   <h1
-                    class="text-2xl md:text-3xl lg:text-4xl font-bold text-black-1 mb-6 pb-0 z-10 leading-snug"
+                    class="text-2xl md:text-3xl lg:text-4xl font-bold text-black-1 mb-0 pb-0 z-10 leading-normal"
                   >
-                  AfroTech on the internet of things
+                    Still processing the internet of things
                   </h1>
-                  <p>“You can’t just turn up with a new pair of Louboutins without people being like, ‘Oh, where did you get your money from?’”</p>
                   <button
-                    class="inline-flex items-center bg-main-black text-white hover:text-black text-base font-bold capitalize mt-4 lg:mt-8 py-3 px-6 hover:bg-transparent border-2 border-black hover:border-black transition ease-in duration-150"
+                    class="inline-flex items-center bg-main-black text-white hover:text-black text-lg font-semibold capitalize mt-4 lg:mt-8 py-3 px-10 hover:bg-transparent border-2 border-black hover:border-black transition ease-in duration-150"
                   >
                     Listen Now
                   </button>
@@ -601,7 +534,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="w-full md:w-7/12 mb-8 md:mb-0">
+                <div class="w-full md:w-3/5 mb-8 md:mb-0">
                   <div class="relative w-full img-cover-height z-10">
                     <a href="#">
                       <img
@@ -617,7 +550,7 @@
             </div>
 
             <div
-              class="absolute right-0 md:inset-x-auto bottom-0 z-2 md:w-full carousel-control-group"
+              class="absolute right-0 md:inset-x-auto bottom-0 z-2 md:w-full h-60 carousel-control-group"
             >
               <div class="relative h-full">
                 <div class="flex justify-between top-50 md:hidden invisible">
@@ -695,383 +628,61 @@
                 </div>
               </div>
             </div>
-          </div> -->
-        </div>
-      </section>
-      <!-- End: Hero Section -->
-
-      <!-- Begin: News Items Section -->
-      <section class="bg-main-gray">
-        <div class="container mx-auto py-6 px-4 md:px-6">
-          <div class="flex justify-between border-b border-gray-400 pb-2">
-            <h1
-              class="inline-flex text-xs md:text-3xl font-bold text-black-1 leading-none uppercase"
-            >
-              Win
-            </h1>
-
-            <div>
-              <a href="#" class="md:flex hidden cursor-pointer">
-                See more competitions
-                <span>
-                  <svg class="h-6 w-6 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="mt-4">
-            <div
-              class="grid grid-cols-6 grid-rows-1 md:grid-rows-2 grid-flow-row md:grid-flow-col gap-4"
-            >
-              <div
-                class="md:row-start-1 md:row-end-3 col-span-6 md:col-span-3 relative bg-white shadow hover:shadow-lg cursor-pointer z-10 card-bg-height"
-              >
-                <div class="w-full h-full">
-                  <div class="categoryPhoto">
-                    <img
-                      src="assets/img/img1/smImg.png"
-                      alt="win tickets to see Talib Kweli"
-                      class="w-full object-cover lg:object-cover"
-                    />
-                  </div>
-                  <div
-                    class="flex justify-between flex-col md:p-4 px-4 py-2 categoryCaption"
-                  >
-                    <h1
-                      class="text-base md:text-2xl font-semibold leading-normal hover:text-blue-500"
-                    >
-                      Win 2 tickets to see the legend that is Talib Kweli
-                    </h1>
-
-                    <a
-                      href="#"
-                      class="inline-block text-sm text-black text-opacity-50 hover:text-gray-900 hover:text-opacity-100"
-                      >Events</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="row-span-1 col-span-6 md:col-span-3 flex bg-white shadow hover:shadow-lg cursor-pointer card-sm-height"
-              >
-                <div class="categorySmPhoto overflow-hidden w-2/4">
-                  <a href="#">
-                    <img
-                      src="http://multimedia.colourfulradio.com/content/CR-T-Shirt-IMG_3147.png"
-                      alt="win tickets to Lionel Live"
-                      class="md:h-full md:w-full object-cover"
-                    />
-                  </a>
-                </div>
-                <div
-                  class="categorySmOption flex justify-between flex-col p-2 md:p-4"
-                >
-                  <a
-                    href="#"
-                    class="text-base md:text-2xl font-semibold leading-tight hover:text-blue-500"
-                    >Win 2 tickets to Lionel Live in the park</a
-                  >
-
-                  <a
-                    href="#"
-                    class="inline-block text-sm text-black text-opacity-50 hover:text-gray-900 hover:text-opacity-100"
-                    >Events</a
-                  >
-                </div>
-              </div>
-
-              <div
-                class="row-span-1 col-span-6 md:col-span-3 flex bg-white shadow hover:shadow-lg cursor-pointer card-sm-height"
-              >
-                <div class="categorySmPhoto overflow-hidden w-2/4">
-                  <a href="#">
-                    <img
-                      src="assets/img/img1/smImg1.png"
-                      alt="win tickets to Lionel Live"
-                      class="md:h-full md:w-full object-cover"
-                    />
-                  </a>
-                </div>
-                <div
-                  class="categorySmOption flex justify-between flex-col p-2 md:p-4"
-                >
-                  <a
-                    href="#"
-                    class="text-base md:text-2xl font-semibold leading-none hover:text-blue-500"
-                    >Get BT Sport FREE for a year with Virgin Media</a
-                  >
-
-                  <a
-                    href="#"
-                    class="inline-block text-sm text-black text-opacity-50 hover:text-gray-900 hover:text-opacity-100"
-                    >Electronics</a
-                  >
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
-      <!-- End: News Items section -->
 
-      <!-- Begin: Items Carousel -->
       <section class="bg-main-gray">
-        <div class="container mx-auto py-6 px-4 md:px-6">
-          <div class="flex justify-between border-b border-gray-400 pb-2">
+        <div class="container mx-auto py-6 px-3 md:px-6">
+          <div>
             <h1
-              class="inline-flex text-xs md:text-3xl font-bold text-black-1 leading-none uppercase"
+              class="inline-flex text-xs md:text-3xl font-semibold md:font-bold text-black-1 leading-none uppercase border-2 border-gray-900 p-1"
             >
               Podcasts
             </h1>
-
-            <div>
-              <a href="#" class="md:flex hidden cursor-pointer">
-                See more podcasts
-                <span>
-                  <svg class="h-6 w-6 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                  </svg>
-                </span>
-              </a>
-            </div>
           </div>
           <div class="mt-4">
             <div class="w-full overflow-y-scroll">
               <ul class="inline-flex border-b tab-group">
                 <li
-                  id="item-1"
                   class="font-base font-semibold capitalize text-gray-1 mr-4 py-2 cursor-pointer tab-pills-1 active"
                 >
                   Fresh
                 </li>
                 <li
-                  id="item-2"
                   class="font-base font-semibold capitalize text-gray-1 mr-4 py-2 cursor-pointer tab-pills-1"
                 >
                   Technology
                 </li>
                 <li
-                  id="item-1"
                   class="font-base font-semibold capitalize text-gray-1 mr-4 py-2 cursor-pointer tab-pills-1"
                 >
                   Comedy
                 </li>
                 <li
-                  id="item-2"
                   class="font-base font-semibold capitalize text-gray-1 mr-4 py-2 cursor-pointer tab-pills-1"
                 >
                   Spirituality
                 </li>
                 <li
-                  id="item-1"
                   class="font-base font-semibold capitalize text-gray-1 mr-4 py-2 cursor-pointer tab-pills-1"
                 >
                   Business
                 </li>
                 <li
-                  id="item-2"
                   class="font-base font-semibold capitalize text-gray-1 mr-4 py-2 cursor-pointer tab-pills-1"
                 >
                   History
                 </li>
                 <li
-                  id="item-1"
                   class="font-base font-semibold capitalize text-gray-1 mr-4 py-2 cursor-pointer tab-pills-1"
                 >
                   Culture
                 </li>
-                <li
-                  id="item-2"
-                  class="font-base font-semibold capitalize text-gray-1 mr-4 py-2 cursor-pointer tab-pills-1"
-                >
-                  Language
-                </li>
               </ul>
             </div>
 
-            <div
-              id="item-1-content"
-              class="mt-4 w-full"
-            >
-              <div class="flex justify-between flex-wrap md:flex-wrap box-border w-full md:gap-x-4 md:gap-y-10">
-                <a href="#" class="podcast-card-wrapper block">
-                  <div class="podcast-lg-card bg-green-50 overflow-hidden">
-                    <img
-                      src="https://gimlet.spotifycdn.com/show_art/ffa11f24-03a4-47b3-9150-91d811e26170/fallback.jpg"
-                      alt="trevor noah podcast"
-                      class="max-w-full h-full w-full hover:shadow-lg object-center object-cover"
-                    />
-                  </div>
-                  <p
-                    class="text-sm md:text-base font-semibold md:font-semibold leading-none md:leading-normal text-black-1 hover:text-yellow-700 capitalize mt-2 md:mt-4"
-                  >
-                    The McCoy is Real
-                  </p>
-                  <p
-                    class="text-sm leading-normal text-black-1 hidden md:block"
-                  >
-                    Louis is using the lockdown to track down some people he's
-                    been longing to talk to.
-                  </p>
-                </a>
-
-                <a href="#" class="podcast-card-wrapper block">
-                  <div class="podcast-lg-card bg-green-50 overflow-hidden">
-                    <img
-                      src="https://ichef.bbci.co.uk/images/ic/400x400/p08vtxpt.jpg"
-                      alt="trevor noah podcast"
-                      class="max-w-full h-full w-full hover:shadow-lg object-center object-cover"
-                    />
-                  </div>
-                  <p
-                    class="text-sm md:text-base font-semibold md:font-semibold leading-none md:leading-normal text-black-1 hover:text-yellow-700 capitalize mt-2 md:mt-4"
-                  >
-                    The McCoy is Real
-                  </p>
-                  <p
-                    class="text-sm leading-normal text-black-1 hidden md:block"
-                  >
-                    Louis is using the lockdown to track down some people he's
-                    been longing to talk to.
-                  </p>
-                </a>
-
-                <a href="#" class="podcast-card-wrapper block">
-                  <div class="podcast-lg-card bg-green-50 overflow-hidden">
-                    <img
-                      src="assets/img/img1/trevor.png"
-                      alt="trevor noah podcast"
-                      class="max-w-full h-full w-full hover:shadow-lg object-center object-cover"
-                    />
-                  </div>
-                  <p
-                    class="text-sm md:text-base font-semibold md:font-semibold leading-none md:leading-normal text-black-1 hover:text-yellow-700 capitalize mt-2 md:mt-4"
-                  >
-                    The McCoy is Real
-                  </p>
-                  <p
-                    class="text-sm leading-normal text-black-1 hidden md:block"
-                  >
-                    Louis is using the lockdown to track down some people he's
-                    been longing to talk to.
-                  </p>
-                </a>
-              
-                <a href="#" class="podcast-card-wrapper block">
-                  <div class="podcast-lg-card bg-green-50 overflow-hidden">
-                    <img
-                      src="assets/img/img1/trevor.png"
-                      alt="trevor noah podcast"
-                      class="max-w-full h-full w-full hover:shadow-lg object-center object-cover"
-                    />
-                  </div>
-                  <p
-                    class="text-sm md:text-base font-semibold md:font-semibold leading-none md:leading-normal text-black-1 hover:text-yellow-700 capitalize mt-2 md:mt-4"
-                  >
-                    The McCoy is Real
-                  </p>
-                  <p
-                    class="text-sm leading-normal text-black-1 hidden md:block"
-                  >
-                    Louis is using the lockdown to track down some people he's
-                    been longing to talk to.
-                  </p>
-                </a>
-
-                <a href="#" class="podcast-card-wrapper block">
-                  <div class="podcast-lg-card bg-green-50 overflow-hidden">
-                    <img
-                      src="https://gimlet.spotifycdn.com/show_art/ffa11f24-03a4-47b3-9150-91d811e26170/fallback.jpg"
-                      alt="trevor noah podcast"
-                      class="max-w-full h-full w-full hover:shadow-lg object-center object-cover"
-                    />
-                  </div>
-                  <p
-                    class="text-sm md:text-base font-semibold md:font-semibold leading-none md:leading-normal text-black-1 hover:text-yellow-700 capitalize mt-2 md:mt-4"
-                  >
-                    The McCoy is Real
-                  </p>
-                  <p
-                    class="text-sm leading-normal text-black-1 hidden md:block"
-                  >
-                    Louis is using the lockdown to track down some people he's
-                    been longing to talk to.
-                  </p>
-                </a>
-
-                <a href="#" class="podcast-card-wrapper block">
-                  <div class="podcast-lg-card bg-green-50 overflow-hidden">
-                    <img
-                      src="https://ichef.bbci.co.uk/images/ic/400x400/p08vtxpt.jpg"
-                      alt="trevor noah podcast"
-                      class="max-w-full h-full w-full hover:shadow-lg object-center object-cover"
-                    />
-                  </div>
-                  <p
-                    class="text-sm md:text-base font-semibold md:font-semibold leading-none md:leading-normal text-black-1 hover:text-yellow-700 capitalize mt-2 md:mt-4"
-                  >
-                    The McCoy is Real
-                  </p>
-                  <p
-                    class="text-sm leading-normal text-black-1 hidden md:block"
-                  >
-                    Louis is using the lockdown to track down some people he's
-                    been longing to talk to.
-                  </p>
-                </a>
-
-                <a href="#" class="podcast-card-wrapper block">
-                  <div class="podcast-lg-card bg-green-50 overflow-hidden">
-                    <img
-                      src="assets/img/img1/trevor.png"
-                      alt="trevor noah podcast"
-                      class="max-w-full h-full w-full hover:shadow-lg object-center object-cover"
-                    />
-                  </div>
-                  <p
-                    class="text-sm md:text-base font-semibold md:font-semibold leading-none md:leading-normal text-black-1 hover:text-yellow-700 capitalize mt-2 md:mt-4"
-                  >
-                    The McCoy is Real
-                  </p>
-                  <p
-                    class="text-sm leading-normal text-black-1 hidden md:block"
-                  >
-                    Louis is using the lockdown to track down some people he's
-                    been longing to talk to.
-                  </p>
-                </a>
-              
-                <a href="#" class="podcast-card-wrapper block">
-                  <div class="podcast-lg-card bg-green-50 overflow-hidden">
-                    <img
-                      src="assets/img/img1/trevor.png"
-                      alt="trevor noah podcast"
-                      class="max-w-full h-full w-full hover:shadow-lg object-center object-cover"
-                    />
-                  </div>
-                  <p
-                    class="text-sm md:text-base font-semibold md:font-semibold leading-none md:leading-normal text-black-1 hover:text-yellow-700 capitalize mt-2 md:mt-4"
-                  >
-                    The McCoy is Real
-                  </p>
-                  <p
-                    class="text-sm leading-normal text-black-1 hidden md:block"
-                  >
-                    Louis is using the lockdown to track down some people he's
-                    been longing to talk to.
-                  </p>
-                </a>
-                
-              </div>
-            </div>
-
-            <div
-              id="item-2-content"
-              class="mt-4 w-full overflow-x-scroll item-content hidden"
-            >
+            <div class="mt-4 w-full overflow-y-scroll">
               <div class="inline-flex md:flex justify-between width-150">
                 <a href="#" class="w-2/5 md:w-1/3 block mr-2">
                   <img
@@ -1168,440 +779,339 @@
           </div>
         </div>
       </section>
-      <!-- End: Items Carousel -->
 
-      <!-- Video Player -->
-      <section id="video-player-wrapper" class="bg-main-gray hidden">
-        <div class="container m-auto md:w-1/2 w-full px-4 md:px-0 relative">
-          <video
-            id="video-player"
-            class="w-full"
-            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
-            controls
-          >
-            Sorry, your browser doesn't support embedded videos.
-          </video>
-          <div class="absolute right-0 top-0 pr-2 md:pr-0">
-            <button class="w-8 h-8 my-2 mx-2 shadow-md" id="close-video">
-              <span>
-                <img src="assets/img/cancel.svg" alt="close window" />
-              </span>
-            </button>
-          </div>
+      <section class="bg-main-gray">
+        <div class="container mx-auto py-6 px-3 md:px-6">
+          <a href="#">
+            <div
+              class="advert-space hidden md:flex items-center justify-center"
+            >
+              <img src="assets/img/img1/service-big.png" alt="Ads here" />
+            </div>
+            <div
+              class="advert-space-mobile flex md:hidden items-center justify-center"
+            >
+              <img src="assets/img/img1/service-small.png" alt="Ads here" />
+            </div>
+          </a>
         </div>
       </section>
-      <!-- End: Video Play -->
 
-      <!-- Begin: Items List -->
-      <section class="bg-main-gray">
-        <div class="container mx-auto py-6 px-4 md:px-6">
-          <div class="w-full lg:w-3/5">
-            <div class="flex justify-between items-center border-b border-gray-400 pb-2">
-              <h2 class="text-sm md:text-lg font-semibold md:font-bold">
-                12 episodes
-              </h2>
-              <div class="flex flex-col items-end relative">
-                <button
-                  id="newest-item-dropdown-trigger"
-                  class="bg-transparent text-sm md:text-lg text-black font-bold py-2 px-4 inline-flex items-center"
-                >
-                  <span>Newest</span>
-                  <svg
-                    class="fill-current ml-2"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="12"
-                    height="7.4"
-                  >
-                    <path
-                      d="M10.6 0L6 4.6 1.4 0 0 1.4l6 6 6-6z"
-                      fill="#000000"
-                      fill-rule="evenodd"
+      <section class="bg-main-gray relative background-landing-1">
+        <div class="container mx-auto py-6 px-3 md:px-6">
+          <div>
+            <h1
+              class="inline-flex text-xs md:text-3xl font-semibold md:font-bold text-black-1 leading-none uppercase border-2 border-gray-900 p-1"
+            >
+              Win
+            </h1>
+          </div>
+          <div class="mt-4">
+            <div
+              class="grid grid-cols-6 grid-rows-1 md:grid-rows-2 grid-flow-row md:grid-flow-col gap-4"
+            >
+              <div
+                class="md:row-start-1 md:row-end-3 col-span-6 md:col-span-3 relative bg-white hover:shadow-lg cursor-pointer z-10"
+              >
+                <div class="w-full h-full">
+                  <div class="categoryPhoto">
+                    <img
+                      src="assets/img/img1/bigImg.png"
+                      alt="win tickets to see Talib Kweli"
+                      class="w-full object-none lg:object-cover"
                     />
-                  </svg>
-                </button>
-                <!-- dropdown menu below. remove #hidden class to reveal -->
+                  </div>
+                  <div
+                    class="flex justify-between flex-col p-4 categoryCaption"
+                  >
+                    <h1
+                      class="text-base md:text-2xl font-semibold leading-normal hover:text-blue-500"
+                    >
+                      Win 2 tickets to see the legend that is Talib Kweli
+                    </h1>
+
+                    <a
+                      href="#"
+                      class="inline-block text-sm text-black text-opacity-50 underline hover:text-gray-900 hover:text-opacity-100"
+                      >Events</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="row-span-1 col-span-6 md:col-span-3 flex bg-white hover:shadow-lg cursor-pointer z-10"
+              >
+                <div class="categorySmPhoto w-2/4">
+                  <a href="#">
+                    <img
+                      src="assets/img/img1/smImg.png"
+                      alt="win tickets to Lionel Live"
+                      class="md:h-full md:w-full"
+                    />
+                  </a>
+                </div>
                 <div
-                  id="newest-item-dropdown-menu"
-                  class="hidden absolute top-35 mt-2 py-2 w-48 bg-white rounded-lg shadow-lg py-2"
+                  class="categorySmOption flex justify-between flex-col p-2 md:p-4"
                 >
                   <a
                     href="#"
-                    class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white"
-                    >Menu 1</a
+                    class="text-base md:text-2xl font-semibold leading-normal hover:text-blue-500"
+                    >Win 2 tickets to Lionel Live in the park</a
                   >
+
                   <a
                     href="#"
-                    class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white"
-                    >Menu 2</a
-                  >
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white"
-                    >Menu 3</a
+                    class="inline-block text-sm text-black text-opacity-50 underline hover:text-gray-900 hover:text-opacity-100"
+                    >Events</a
                   >
                 </div>
               </div>
-            </div>
 
-            <div class="mt-4">
-              <div class="flex items-center cursor-pointer md:h-40 border-b border-gray-400 pb-4">
-                <div class="hidden md:block h-full md:p-0 overflow-hidden episode-card-img">
-                  <img
-                    src="https://content.production.cdn.art19.com/images/44/f7/bb/b8/44f7bbb8-40ce-4a63-8ab8-9bc1cd71f4be/8343534d6192d0016c12db2ac6925885d35255a56e2933d553a7eb7d34c17e11a714ec9bc43c44fc8172ed637395c552f56fa3f7aefe961e2392b0681f4cd9f1.jpeg"
-                    alt="schedule img"
-                    class="object-cover h-full w-full"
-                  />
-                </div>
-                <div class="w-full md:w-4/5 ml-0 md:ml-4 min-h-full overflow-hidden">
-                  <div>
-                    <div class="w-full">
-                      <div class="flex">
-                        <div class="w-9/12 md:w-10/12">
-                          <h4
-                            class="text-lg md:text-2xl capitalize font-bold md:font-bold text-black leading-tight mb-1"
-                            >
-                            Introducing the Trevor Noah Podcast, Season 2
-                          </h4>
-                          <p class="text-xs md:text-sm text-gray-900 md:text-opacity-75">S1 EP2 | 1 Aug, 2020 | 50 Mins</p>
-                        </div>
-                        <div class="w-3/12 md:w-2/12 flex justify-center">
-                          <button>
-                            <span
-                              class="hover:bg-yellow-700 rounded-full flex justify-even items-center h-10 w-10"
-                            >
-                            <svg width="40" height="40">
-                              <path data-name="Path 1085" d="M0 0h40v40H0z" fill="none"/>
-                              <path data-name="Path 1086" d="M20 2a18 18 0 1018 18A18.007 18.007 0 0020 2zm-3.6 26.1V11.9L27.2 20z"/>
-                            </svg>
-                            </span>
-                          </button>
-                        </div>
-                      </div>
-
-                      <div class="w-9/12 md:w-10/12">
-                        <p class="hidden md:block text-sm text-black-1 mt-6 md:mt-4">
-                          Louis is using the lockdown to track down some of the
-                          people he's ...
-                        </p>
-                        <a href="#" class="py-4"><span class="text-xs text-black underline">Read more</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- below is for mobile view. hide for web view -->
-            </div>
-
-            <div class="mt-4">
-              <div class="flex items-center cursor-pointer md:h-40 border-b border-gray-400 pb-4">
-                <div class="hidden md:block h-full md:p-0 overflow-hidden episode-card-img">
-                  <img
-                    src="https://ichef.bbci.co.uk/images/ic/400x400/p08vtxpt.jpg"
-                    alt="schedule img"
-                    class="object-cover h-full w-full"
-                  />
-                </div>
-                <div class="w-full md:w-4/5 ml-0 md:ml-4 min-h-full overflow-hidden">
-                  <div>
-                    <div class="w-full">
-                      <div class="flex">
-                        <div class="w-9/12 md:w-10/12">
-                          <h4
-                            class="text-lg md:text-2xl capitalize font-bold md:font-bold text-black leading-tight mb-1"
-                            >
-                            Introducing the Trevor Noah Podcast, Season 2
-                          </h4>
-                          <p class="text-xs md:text-sm text-gray-900 md:text-opacity-75">S1 EP2 | 1 Aug, 2020 | 50 Mins</p>
-                        </div>
-                        <div class="w-3/12 md:w-2/12 flex justify-center">
-                          <button>
-                            <span
-                              class="hover:bg-yellow-700 rounded-full flex justify-even items-center h-10 w-10"
-                            >
-                            <svg width="40" height="40">
-                              <path data-name="Path 1085" d="M0 0h40v40H0z" fill="none"/>
-                              <path data-name="Path 1086" d="M20 2a18 18 0 1018 18A18.007 18.007 0 0020 2zm-3.6 26.1V11.9L27.2 20z"/>
-                            </svg>
-                            </span>
-                          </button>
-                        </div>
-                      </div>
-
-                      <div class="w-9/12 md:w-10/12">
-                        <p class="hidden md:block text-sm text-black-1 mt-6 md:mt-4">
-                          Louis is using the lockdown to track down some of the
-                          people he's ...
-                        </p>
-                        <a href="#" class="py-4 bottom-0"><span class="text-sm text-black md:text-opacity-50 underline md:no-underline">Read more</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- below is for mobile view. hide for web view -->
-            </div>
-
-            <button
-                class="inline-flex items-center bg-main-black text-white hover:text-black text-base font-bold capitalize mt-4 py-3 px-6 hover:bg-transparent border-2 border-black hover:border-black transition ease-in duration-150"
+              <div
+                class="row-span-1 col-span-6 md:col-span-3 flex bg-white hover:shadow-lg cursor-pointer z-10"
               >
-              Load more
-              </button>
+                <div class="categorySmPhoto w-2/4">
+                  <a href="#">
+                    <img
+                      src="assets/img/img1/smImg1.png"
+                      alt="win tickets to Lionel Live"
+                      class="md:h-full md:w-full"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="categorySmOption flex justify-between flex-col p-2 md:p-4"
+                >
+                  <a
+                    href="#"
+                    class="text-base md:text-2xl font-semibold leading-normal hover:text-blue-500"
+                    >Get BT Sport FREE for a year with Virgin Media</a
+                  >
+
+                  <a
+                    href="#"
+                    class="inline-block text-sm text-black text-opacity-50 underline hover:text-gray-900 hover:text-opacity-100"
+                    >Electronics</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <!-- End: Items List -->
 
-      <!-- Begin: Schedule Tabs -->
-      <section class="bg-main-gray">
-        <div class="container mx-auto py-6 px-4 md:px-6">
-          <div class="lg:w-3/5 lg:w-3/5">
-            <div class="mt-4">
-              <ul class="inline-flex justify-between w-full overflow-x-scroll tab-control">
-                <li
-                  id="monday"
-                  class="px-2 py-4 md:px-6 md:py-3 tab-pills-2 bg-black text-white text-xs md:text-sm font-semibold text-center uppercase cursor-pointer border-gray-100 border-l-2 border-r-2 w-full"
-                >
-                  Mon
-                </li>
-                <li
-                  id="tuesday"
-                  class="px-2 py-4 md:px-6 md:py-3 tab-pills-2 bg-color-white2 text-black text-xs md:text-sm font-semibold text-center uppercase cursor-pointer border-gray-100 border-l-2 border-r-2 w-full"
-                >
-                  Tue
-                </li>
-                <li
-                  id="monday"
-                  class="px-2 py-4 md:px-6 md:py-3 tab-pills-2 bg-color-white2 text-black text-xs md:text-sm font-semibold text-center uppercase cursor-pointer border-gray-100 border-l-2 border-r-2 w-full"
-                >
-                  Wed
-                </li>
-                <li
-                  id="tuesday"
-                  class="px-2 py-4 md:px-6 md:py-3 tab-pills-2 bg-color-white2 text-black text-xs md:text-sm font-semibold text-center uppercase cursor-pointer border-gray-100 border-l-2 border-r-2 w-full"
-                >
-                  Thu
-                </li>
-                <li
-                  id="monday"
-                  class="px-2 py-4 md:px-6 md:py-3 tab-pills-2 bg-color-white2 text-black text-xs md:text-sm font-semibold text-center uppercase cursor-pointer border-gray-100 border-l-2 border-r-2 w-full"
-                >
-                  Fri
-                </li>
-                <li
-                  id="tuesday"
-                  class="px-2 py-4 md:px-6 md:py-3 tab-pills-2 bg-color-white2 text-black text-xs md:text-sm font-semibold text-center uppercase cursor-pointer border-gray-100 border-l-2 border-r-2 w-full"
-                >
-                  Sat
-                </li>
-                <li
-                  id="monday"
-                  class="px-2 py-4 md:px-6 md:py-3 tab-pills-2 bg-color-white2 text-black text-xs md:text-sm font-semibold text-center uppercase cursor-pointer border-gray-100 border-l-2 border-r-2 w-full"
-                >
-                  Sun
-                </li>
-              </ul>
-            </div>
-            <!-- Monday -->
-            <div id="monday-content" class="mt-6 w-full news-content">
-              <div class="hover:border-green-600 border-l-4 mb-2 md:mb-4 cursor-pointer">
-                <div class="bg-white flex w-full overflow-hidden tab-wrapper">
-                  <div
-                    class="flex justify-between items-center tab-time-wrapper"
-                  >
-                    <span class="text-sm md:text-lg font-bold text-black-1 text-center w-full"
-                      >12:00</span
-                    >
-                  </div>
-                  <div class="overflow-hidden tab-img-wrapper">
-                    <img
-                      src="assets/img/img1/trevor.png"
-                      alt="schedule img"
-                      class="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div class="p-4 md:pr-16 flex md:block items-center">
-                    <h4
-                      class="text-sm md:text-lg capitalize font-medium md:font-semibold text-black md:mb-2"
-                    >
-                    Under the Skin with Russell Brand        
-                    </h4>
-                    <p class="line-clamp-2 hidden md:block text-sm text-black-1">
-                      Get the latest news, reviews, gossip and commentary from
-                      across the Continent. Get the latest news, reviews, gossip and commentary from
-                      across the Continent.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="hover:border-green-600 border-l-4 mb-2 md:mb-4 cursor-pointer">
-                <div class="bg-white flex w-full overflow-hidden tab-wrapper">
-                  <div
-                    class="flex justify-between items-center tab-time-wrapper"
-                  >
-                    <span class="text-sm md:text-lg font-bold text-black-1 text-center w-full"
-                      >12:00</span
-                    >
-                  </div>
-                  <div class="overflow-hidden tab-img-wrapper">
-                    <img
-                      src="assets/img/img1/trevor.png"
-                      alt="schedule img"
-                      class="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div class="p-4 md:pr-16 flex md:block items-center">
-                    <h4
-                      class="text-sm md:text-lg capitalize font-medium md:font-semibold text-black md:mb-2"
-                    >
-                    Under the Skin with Russell Brand        
-                    </h4>
-                    <p class="line-clamp-2 hidden md:block text-sm text-black-1">
-                      Get the latest news, reviews, gossip and commentary from
-                      across the Continent. Get the latest news, reviews, gossip and commentary from
-                      across the Continent.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Tuesday  -->
-            <div id="tuesday-content" class="mt-6 w-full news-content">
-              <div class="hover:border-green-600 border-l-4 mb-2 md:mb-4 cursor-pointer">
-                <div class="bg-white flex w-full overflow-hidden tab-wrapper">
-                  <div
-                    class="flex justify-between items-center tab-time-wrapper"
-                  >
-                    <span class="text-sm md:text-lg font-bold text-black-1 text-center w-full"
-                      >12:00</span
-                    >
-                  </div>
-                  <div class="overflow-hidden tab-img-wrapper">
-                    <img
-                      src="assets/img/img1/trevor.png"
-                      alt="schedule img"
-                      class="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div class="p-4 md:pr-16 flex md:block items-center">
-                    <h4
-                      class="text-sm md:text-lg capitalize font-medium md:font-semibold text-black md:mb-2"
-                    >
-                    Under the Skin with Russell Brand        
-                    </h4>
-                    <p class="line-clamp-2 hidden md:block text-sm text-black-1">
-                      Get the latest news, reviews, gossip and commentary from
-                      across the Continent. Get the latest news, reviews, gossip and commentary from
-                      across the Continent.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="hover:border-green-600 border-l-4 mb-2 md:mb-4 cursor-pointer">
-                <div class="bg-white flex w-full overflow-hidden tab-wrapper">
-                  <div
-                    class="flex justify-between items-center tab-time-wrapper"
-                  >
-                    <span class="text-sm md:text-lg font-bold text-black-1 text-center w-full"
-                      >12:00</span
-                    >
-                  </div>
-                  <div class="overflow-hidden tab-img-wrapper">
-                    <img
-                      src="assets/img/img1/trevor.png"
-                      alt="schedule img"
-                      class="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div class="p-4 md:pr-16 flex md:block items-center">
-                    <h4
-                      class="text-sm md:text-lg capitalize font-medium md:font-semibold text-black md:mb-2"
-                    >
-                    Under the Skin with Russell Brand        
-                    </h4>
-                    <p class="line-clamp-2 hidden md:block text-sm text-black-1">
-                      Get the latest news, reviews, gossip and commentary from
-                      across the Continent. Get the latest news, reviews, gossip and commentary from
-                      across the Continent.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
+      <section class="bg-main-gray relative background-landing-2">
+        <div class="container mx-auto py-6 px-3 md:px-6">
+          <div>
+            <h1
+              class="inline-flex text-xs md:text-3xl font-semibold md:font-bold text-black-1 leading-none uppercase border-2 border-gray-900 p-1"
+            >
+              News
+            </h1>
           </div>
-        </div>
-      </section>
-      <!-- End: Schedule Tabs -->
-
-      <!-- Begin: Promo Card -->
-      <section class="bg-main-gray">
-        <div class="container mx-auto py-6 px-4 md:px-6">
-          <div
-            class="bg-white flex justify-between flex-wrap flex-col-reverse lg:flex-row relative z-10"
-          >
-            <div class="pt-6 px-6 md:pt-10 md:px-10 w-full lg:w-1/2">
-              <h2
-                class="text-2xl md:text-3xl font-bold text-black-1 leading-normal mb-3"
+          <div class="mt-4">
+            <div
+              class="grid grid-cols-6 grid-rows-1 md:grid-rows-2 grid-flow-row md:grid-flow-col gap-4"
+            >
+              <div
+                class="md:row-start-1 md:row-end-3 col-span-6 md:col-span-3 relative bg-white hover:shadow-lg cursor-pointer z-10"
               >
-                Get the latest updates
-              </h2>
-              <p class="text-base text-black-1 leading-normal">
-                Get discounts, priority tickets and enter the latest
-                competitions.
-              </p>
+                <div class="w-full h-full">
+                  <div class="categoryPhoto">
+                    <img
+                      src="assets/img/img1/windrus-2020.png"
+                      alt="Colourful radio celebrates windrush 2020"
+                      class="w-full object-none lg:object-cover"
+                    />
+                  </div>
+                  <div
+                    class="flex justify-between flex-col p-4 categoryCaption"
+                  >
+                    <h1
+                      class="text-base md:text-2xl font-semibold leading-normal hover:text-blue-500"
+                    >
+                      Colourful RADIO celebrates Windrush 2020!
+                    </h1>
 
-              <form class="w-full my-6">
-                <div class="border-b border-gray-900 py-2 mb-4">
-                  <input
-                    class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 pr-2 leading-tight focus:outline-none"
-                    type="text"
-                    placeholder="First name"
-                  />
+                    <a
+                      href="#"
+                      class="inline-block text-sm text-black text-opacity-50 underline hover:text-gray-900 hover:text-opacity-100"
+                      >Culture</a
+                    >
+                  </div>
                 </div>
-                <div class="border-b border-gray-900 py-2 mb-4">
-                  <input
-                    class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 pr-2 leading-tight focus:outline-none"
-                    type="text"
-                    placeholder="Second name"
-                  />
+              </div>
+
+              <div
+                class="row-span-1 col-span-6 md:col-span-3 flex bg-white hover:shadow-lg cursor-pointer z-10"
+              >
+                <div class="categorySmPhoto w-2/4">
+                  <a href="#">
+                    <img
+                      src="assets/img/img1/nhs-test-app.png"
+                      alt="NHS launches new Test and trace app"
+                      class="md:h-full md:w-full"
+                    />
+                  </a>
                 </div>
-                <div class="border-b border-gray-900 py-2 mb-4">
-                  <input
-                    class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 pr-2 leading-tight focus:outline-none"
-                    type="email"
-                    placeholder="Email"
-                  />
-                </div>
-                <button
-                  class="inline-flex items-center bg-main-black text-white text-base font-bold capitalize md:mt-8 py-2 px-6 hover:bg-gray-900 hover:shadow-xl transition ease-in duration-150"
+                <div
+                  class="categorySmOption flex justify-between flex-col p-2 md:p-4"
                 >
-                  Get some
-                </button>
-                <p class="text-sm text-black-1 mt-3">
-                  We won't spam you. It'll be one message a month. Promise.
-                </p>
-              </form>
-            </div>
+                  <a
+                    href="#"
+                    class="text-base md:text-2xl font-semibold leading-normal hover:text-blue-500"
+                    >NHS launches new Test and Trace app</a
+                  >
 
-            <div class="w-full md:h-64 lg:h-auto lg:w-2/5 overflow-hidden">
-              <img
-                src="assets/img/img1/updates-img.png"
-                alt="latest updates"
-                class="w-full"
-              />
+                  <a
+                    href="#"
+                    class="inline-block text-sm text-black text-opacity-50 underline hover:text-gray-900 hover:text-opacity-100"
+                    >Health</a
+                  >
+                </div>
+              </div>
+
+              <div
+                class="row-span-1 col-span-6 md:col-span-3 flex bg-white hover:shadow-lg cursor-pointer z-10"
+              >
+                <div class="categorySmPhoto w-2/4">
+                  <a href="#">
+                    <img
+                      src="assets/img/img1/mayor-khan.png"
+                      alt="win tickets to Lionel Live"
+                      class="md:h-full md:w-full"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="categorySmOption flex justify-between flex-col p-2 md:p-4"
+                >
+                  <a
+                    href="#"
+                    class="text-base md:text-2xl font-semibold leading-normal hover:text-blue-500"
+                    >Mayor Khan talks BLM and George Floyd</a
+                  >
+
+                  <a
+                    href="#"
+                    class="inline-block text-sm text-black text-opacity-50 underline hover:text-gray-900 hover:text-opacity-100"
+                    >Politics</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- End: Promo Card -->
+
+      <section class="bg-main-gray lg:pb-64 relative background-landing-clip">
+        <div class="container mx-auto py-6 px-3 md:px-6">
+          <div>
+            <h1
+              class="inline-flex text-xs md:text-3xl font-semibold md:font-bold text-black-1 leading-none uppercase border-2 border-gray-900 p-1"
+            >
+              Shows
+            </h1>
+          </div>
+          <div class="mt-4">
+            <div class="mt-4 w-full overflow-y-scroll">
+              <div class="inline-flex md:flex justify-between width-150">
+                <a href="#" class="w-2/5 md:w-1/3 block mr-2 z-10">
+                  <img
+                    src="assets/img/img1/trevor.png"
+                    alt="trevor noah podcast"
+                    class="w-full hover:shadow-lg"
+                  />
+                  <p
+                    class="text-sm md:text-base font-medium md:font-semibold leading-none md:leading-normal text-black-1 hover:text-yellow-700 capitalize mt-2"
+                  >
+                    Steam Down
+                  </p>
+                  <p
+                    class="text-sm leading-normal text-black-1 hidden md:block"
+                  >
+                    10AM
+                  </p>
+                </a>
+                <a href="#" class="w-2/5 md:w-1/3 block mr-2 z-10">
+                  <img
+                    src="assets/img/img1/trevor.png"
+                    alt="trevor noah podcast"
+                    class="w-full hover:shadow-lg"
+                  />
+                  <p
+                    class="text-sm md:text-base font-medium md:font-semibold leading-none md:leading-normal text-black-1 hover:text-yellow-700 capitalize mt-2"
+                  >
+                    AfroBeats Hour
+                  </p>
+                  <p
+                    class="text-sm leading-normal text-black-1 hidden md:block"
+                  >
+                    1PM
+                  </p>
+                </a>
+                <a href="#" class="w-2/5 md:w-1/3 block mr-2 z-10">
+                  <img
+                    src="assets/img/img1/trevor.png"
+                    alt="trevor noah podcast"
+                    class="w-full hover:shadow-lg"
+                  />
+                  <p
+                    class="text-sm md:text-base font-medium md:font-semibold leading-none md:leading-normal text-black-1 hover:text-yellow-700 capitalize mt-2"
+                  >
+                    The Wind Down
+                  </p>
+                  <p
+                    class="text-sm leading-normal text-black-1 hidden md:block"
+                  >
+                    4PM
+                  </p>
+                </a>
+                <a href="#" class="w-2/5 md:w-1/3 block mr-2 z-10">
+                  <img
+                    src="assets/img/img1/trevor.png"
+                    alt="trevor noah podcast"
+                    class="w-full hover:shadow-lg"
+                  />
+                  <p
+                    class="text-sm md:text-base font-medium md:font-semibold leading-none md:leading-normal text-black-1 hover:text-yellow-700 capitalize mt-2"
+                  >
+                    Keeping athena company
+                  </p>
+                  <p
+                    class="text-sm leading-normal text-black-1 hidden md:block"
+                  >
+                    7PM
+                  </p>
+                </a>
+                <a href="#" class="w-2/5 md:w-1/3 block mr-2 z-10">
+                  <img
+                    src="assets/img/img1/trevor.png"
+                    alt="trevor noah podcast"
+                    class="w-full hover:shadow-lg"
+                  />
+                  <p
+                    class="text-sm md:text-base font-medium md:font-semibold leading-none md:leading-normal text-black-1 hover:text-yellow-700 capitalize mt-2"
+                  >
+                    Keeping athena company
+                  </p>
+                  <p
+                    class="text-sm leading-normal text-black-1 hidden md:block"
+                  >
+                    Louis is using the lockdown to track down some people he's
+                    been longing to talk to.
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="bg-main-black">
-      <div class="container mx-auto py-6 px-4 md:px-6">
+      <div class="container mx-auto py-6 px-3 md:px-6">
         <div class="flex justify-between items-start flex-wrap md:flex-no-wrap">
           <div class="footer-logo w-full md:w-1/6 mb-6 md:mb-0">
             <img src="assets/img/logowhite.svg" alt="colorful footer logo" />
@@ -1719,9 +1229,6 @@
     </footer>
 
     <script src="assets/js/index.js"></script>
-    <script src="assets/js/items-carousel.js"></script>
-    <script src="assets/js/items-list.js"></script>
-    <script src="assets/js/schedule.js"></script>
     <script src="assets/js/hero.js"></script>
   </body>
 </html>
